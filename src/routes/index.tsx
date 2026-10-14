@@ -125,24 +125,25 @@ function Home() {
 
         <Reveal delay={140}>
           <div className="relative overflow-hidden rounded-[2.25rem] border border-border shadow-soft bg-navy group">
-            <div className="aspect-[5/4] overflow-hidden">
+            <div className="aspect-[3/2] overflow-hidden bg-slate-950/20">
               <img
                 src="/images/corporate-ecosystem.jpg"
-                alt="PANORA Integrated Digital Business Ecosystem"
+                alt="PANORA Connected Digital Business Ecosystem — Local Shops, Wholesalers, MoveX Riders, Consumers"
                 className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 loading="lazy"
               />
             </div>
-            <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(170deg,transparent_35%,rgba(7,21,47,0.90))]" />
-            <div className="glass-card absolute bottom-6 left-6 right-6 rounded-2xl p-4.5 text-white">
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-navy/85 via-navy/20 to-transparent" />
+            <div className="glass-card absolute bottom-4 left-4 right-4 sm:bottom-5 sm:left-5 sm:right-5 rounded-2xl p-4 text-white">
               <div className="flex items-center justify-between">
-                <span className="text-xs font-bold uppercase tracking-wider text-brand-cyan">
+                <span className="text-xs font-bold uppercase tracking-wider text-brand-cyan flex items-center gap-1.5">
+                  <span className="h-1.5 w-1.5 rounded-full bg-brand-cyan animate-pulse" />
                   {tr(lang, "Brand Direction", "ब्राण्डको मूल मर्म")}
                 </span>
-                <span className="text-xs text-white/70">Nepal</span>
+                <span className="text-xs text-white/70 font-semibold">Nepal</span>
               </div>
-              <p className="mt-1 text-lg font-extrabold">Connect. Manage. Trade.</p>
-              <p className="mt-1 text-xs text-white/80 leading-relaxed">
+              <p className="mt-1 text-base sm:text-lg font-extrabold text-white">Connect. Manage. Trade.</p>
+              <p className="mt-0.5 text-xs text-white/80 leading-relaxed">
                 {tr(
                   lang,
                   "Transforming daily operations from pen-and-paper friction to synchronized digital flow.",
