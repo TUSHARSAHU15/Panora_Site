@@ -174,15 +174,16 @@ function MoveXPage() {
       {/* Real-World Logistics Spotlight with Realistic Image */}
       <section className="container-page py-12">
         <div className="grid gap-10 lg:grid-cols-12 items-center rounded-3xl border border-border bg-white p-8 sm:p-12 shadow-soft">
-          <div className="lg:col-span-6 relative overflow-hidden rounded-2xl h-80 w-full bg-slate-100">
+          <div className="lg:col-span-6 relative overflow-hidden rounded-2xl aspect-[3/2] w-full bg-slate-50 border border-border/80 shadow-sm group">
             <img
               src="/images/movex-parcel.jpg"
-              alt={tr(lang, "MoveX parcel courier handover in Nepal", "नेपालमा MoveX पार्सल कुरियर हस्तान्तरण")}
-              className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+              alt={tr(lang, "MoveX parcel dispatch and doorstep delivery network across Nepal", "नेपालभर MoveX पार्सल डिस्प्याच र घरदैलो डेलिभरी सञ्जाल")}
+              className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
             />
-            <div className="absolute top-4 left-4 rounded-full bg-emerald-950/90 backdrop-blur px-3 py-1 text-xs font-bold text-white border border-emerald-500/30">
-              {tr(lang, "Real-Time Tracking & OTP Handover", "लाइभ ट्र्याकिङ र सुरक्षित OTP")}
+            <div className="absolute top-4 left-4 rounded-full bg-emerald-950/90 backdrop-blur px-3 py-1 text-xs font-bold text-white border border-emerald-500/30 shadow-sm flex items-center gap-1.5">
+              <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
+              <span>{tr(lang, "Real-Time Tracking & OTP Handover", "लाइभ ट्र्याकिङ र सुरक्षित OTP")}</span>
             </div>
           </div>
           <div className="lg:col-span-6 space-y-4">
