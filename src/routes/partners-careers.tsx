@@ -135,60 +135,63 @@ function PartnersPage() {
           label: "Strategic Partnerships at PANORA",
           mp4: "/videos/hero-distributor.mp4",
           webm: "/videos/hero-distributor.webm",
-          poster: "/images/partner-alliance.jpg",
+          poster: "/images/panora-ecosystem.jpg",
         }}
       />
 
-      {/* Featured Strategic Alliance Banner with Unique Imagery */}
+      {/* Featured Strategic Alliance Banner with Unique Panora Ecosystem Architecture */}
       <section className="border-b border-border bg-white py-14">
         <div className="container-page">
           <Reveal>
-            <div className="overflow-hidden rounded-3xl border border-border bg-surface shadow-soft grid lg:grid-cols-12 items-center">
-              <div className="lg:col-span-6 relative aspect-[16/10] sm:aspect-[16/9] lg:aspect-auto lg:h-full min-h-[300px]">
-                <img
-                  src="/images/partner-alliance.jpg"
-                  alt="PANORA Strategic Commercial Partnerships"
-                  className="h-full w-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-transparent to-transparent flex items-end p-6 lg:hidden">
-                  <span className="text-sm font-bold text-white">
-                    {tr(lang, "Institutional Bridges Across Nepal", "नेपालभर संस्थागत सहकार्य")}
-                  </span>
+            <div className="overflow-hidden rounded-3xl border border-border bg-surface shadow-soft grid lg:grid-cols-12 items-stretch">
+              <div className="lg:col-span-7 relative bg-gradient-to-br from-slate-100 via-white to-blue-50/40 p-4 sm:p-6 flex items-center justify-center border-b lg:border-b-0 lg:border-r border-border">
+                <div className="relative w-full aspect-[3/2] overflow-hidden rounded-2xl shadow-sm border border-border/60 bg-white">
+                  <img
+                    src="/images/panora-ecosystem.jpg"
+                    alt="PANORA Connected Digital Business Ecosystem Architecture — Local Shops, Distributors, End Customers, Delivery Riders"
+                    className="h-full w-full object-contain"
+                  />
+                  <div className="absolute bottom-2.5 right-2.5 rounded-lg bg-navy/85 px-2.5 py-1 text-[10px] font-bold text-white backdrop-blur shadow-sm flex items-center gap-1.5">
+                    <span className="h-1.5 w-1.5 rounded-full bg-brand-cyan animate-pulse"></span>
+                    <span>{tr(lang, "Official Ecosystem Architecture", "आधिकारिक प्रणाली संरचना")}</span>
+                  </div>
                 </div>
               </div>
 
-              <div className="lg:col-span-6 p-8 sm:p-12 space-y-4">
-                <div className="inline-flex items-center gap-2 rounded-full bg-brand/10 px-3 py-1 text-xs font-bold text-brand uppercase tracking-wider">
-                  <Handshake className="h-3.5 w-3.5" />
-                  <span>{tr(lang, "Why Partner With PANORA?", "PANORA सँग साझेदारी किन?")}</span>
-                </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-navy">
-                  {tr(
-                    lang,
-                    "An Open Ecosystem Built for Sustainable Mutual Growth",
-                    "पारस्परिक दिगो वृद्धिका लागि निर्मित खुला पारिस्थितिकी"
-                  )}
-                </h2>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {tr(
-                    lang,
-                    "PANORA does not operate in isolation. We build the unifying digital rails that connect financial gateways, transport infrastructure, wholesale stockists, and neighborhood shops into one synchronized commerce loop.",
-                    "PANORA एक्लो प्लेटफर्म होइन। हामी वित्तीय गेटवे, ढुवानी पूर्वाधार, थोक वितरक र स्थानीय पसलहरूलाई जोड्ने साझा डिजिटल प्रविधि निर्माण गर्दछौं।"
-                  )}
-                </p>
-
-                <div className="grid grid-cols-2 gap-4 pt-2">
-                  <div className="rounded-xl border border-border bg-white p-3.5">
-                    <p className="text-xl font-extrabold text-brand">100%</p>
-                    <p className="text-xs text-muted-foreground mt-0.5">
-                      {tr(lang, "Verified KYC & Business Transparency", "प्रमाणित व्यवसाय तथा पारदर्शिता")}
-                    </p>
+              <div className="lg:col-span-5 p-7 sm:p-10 flex flex-col justify-between space-y-5">
+                <div className="space-y-3.5">
+                  <div className="inline-flex items-center gap-2 rounded-full bg-brand/10 px-3 py-1 text-xs font-bold text-brand uppercase tracking-wider">
+                    <Handshake className="h-3.5 w-3.5" />
+                    <span>{tr(lang, "Why Partner With PANORA?", "PANORA सँग साझेदारी किन?")}</span>
                   </div>
-                  <div className="rounded-xl border border-border bg-white p-3.5">
-                    <p className="text-xl font-extrabold text-emerald-600">Unified</p>
-                    <p className="text-xs text-muted-foreground mt-0.5">
-                      {tr(lang, "Real-Time API & Webhook Integrations", "वास्तविक समय API र डेटा मिलान")}
-                    </p>
+                  <h2 className="text-2xl sm:text-3xl font-extrabold text-navy leading-tight">
+                    {tr(
+                      lang,
+                      "An Open Ecosystem Built for Mutual Commercial Growth",
+                      "पारस्परिक दिगो वृद्धिका लागि निर्मित खुला पारिस्थितिकी"
+                    )}
+                  </h2>
+                  <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                    {tr(
+                      lang,
+                      "PANORA connects the 4 core pillars of Nepalese trade: Local Retail Shops, Wholesale Distributors, MoveX Delivery Riders, and End Customers into one synchronized commerce loop.",
+                      "PANORA ले नेपाली व्यापारका ४ मुख्य स्तम्भहरूलाई जोड्छ: खुद्रा पसल, थोक वितरक, MoveX राइडर, र उपभोक्ताहरूलाई एउटै डिजिटल चक्रमा।"
+                    )}
+                  </p>
+
+                  <div className="grid grid-cols-2 gap-3 pt-1">
+                    <div className="rounded-xl border border-border bg-white p-3">
+                      <p className="text-lg font-black text-brand">4 Pillars</p>
+                      <p className="text-[11px] text-muted-foreground mt-0.5">
+                        {tr(lang, "Shops, Wholesalers, Riders & Consumers", "पसल, वितरक, राइडर र ग्राहक")}
+                      </p>
+                    </div>
+                    <div className="rounded-xl border border-border bg-white p-3">
+                      <p className="text-lg font-black text-emerald-600">3 Apps</p>
+                      <p className="text-[11px] text-muted-foreground mt-0.5">
+                        {tr(lang, "Business App, MoveX & Marketplace", "Business App, MoveX र बजार")}
+                      </p>
+                    </div>
                   </div>
                 </div>
 

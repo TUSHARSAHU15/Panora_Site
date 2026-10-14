@@ -157,8 +157,42 @@ function HowItWorksPage() {
         </div>
       </section>
 
+      {/* Master Architecture Infographic Section */}
+      <section className="bg-surface py-16 border-y border-border">
+        <div className="container-page">
+          <Reveal>
+            <div className="rounded-3xl border border-border bg-white p-6 sm:p-10 shadow-soft">
+              <div className="text-center max-w-2xl mx-auto mb-8 space-y-2">
+                <span className="text-xs font-bold uppercase tracking-[0.2em] text-brand">
+                  {tr(lang, "Unified Infrastructure", "एकीकृत पूर्वाधार")}
+                </span>
+                <h2 className="text-2xl sm:text-3xl font-extrabold text-navy">
+                  {tr(lang, "The Connected PANORA Architecture", "PANORA को एकीकृत सञ्जाल संरचना")}
+                </h2>
+                <p className="text-xs sm:text-sm text-muted-foreground">
+                  {tr(
+                    lang,
+                    "How Local Shops, Distributors, End Customers, and Delivery Riders synchronize across our 3 core applications.",
+                    "स्थानीय पसल, वितरक, उपभोक्ता र डेलिभरी राइडर कसरी हाम्रा ३ मुख्य एपहरूमा जोडिएका छन्।"
+                  )}
+                </p>
+              </div>
+
+              <div className="relative aspect-[3/2] w-full max-w-5xl mx-auto rounded-2xl overflow-hidden border border-border/80 bg-slate-50 shadow-sm">
+                <img
+                  src="/images/panora-ecosystem.jpg"
+                  alt="PANORA Connected Digital Business Ecosystem Architecture"
+                  className="h-full w-full object-contain"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* Dual Persona Perspective */}
-      <section className="bg-surface py-20 border-y border-border">
+      <section className="bg-white py-20 border-b border-border">
         <div className="container-page">
           <Reveal className="text-center max-w-2xl mx-auto mb-14">
             <h2 className="text-3xl font-extrabold text-navy">
