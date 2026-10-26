@@ -70,11 +70,21 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-3.5 w-3.5 text-brand-cyan shrink-0" />
-                <span>{site[lang].contact.email}</span>
+                <a
+                  href={`mailto:${site[lang].contact.email}`}
+                  className="hover:text-white transition-colors"
+                >
+                  {site[lang].contact.email}
+                </a>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="h-3.5 w-3.5 text-brand-cyan shrink-0" />
-                <span>{site[lang].contact.phone}</span>
+                <a
+                  href={`tel:${site[lang].contact.phone.replace(/[^+\d]/g, "")}`}
+                  className="hover:text-white transition-colors"
+                >
+                  {site[lang].contact.phone}
+                </a>
               </div>
             </div>
 

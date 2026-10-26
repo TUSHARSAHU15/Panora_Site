@@ -102,8 +102,8 @@ function Faq() {
         title={tr(lang, "Still Have Questions?", "अझै केही सोध्न बाँकी छ?")}
         subtitle={tr(
           lang,
-          "Our corporate team in Kathmandu is ready to assist your business or fleet onboarding.",
-          "काठमाडौँस्थित हाम्रो टोली तपाईंको व्यापार वा फ्लीट दर्तामा सहयोग गर्न तयार छ।"
+          "Our corporate team in Saptari, Madhesh Province is ready to assist your business or fleet onboarding.",
+          "सप्तरी, मधेश प्रदेशस्थित हाम्रो टोली तपाईंको व्यापार वा फ्लीट दर्तामा सहयोग गर्न तयार छ।"
         )}
         primary={{ label: tr(lang, "Contact Us Directly", "हामीलाई सम्पर्क गर्नुहोस्"), to: "/contact" }}
         secondary={{ label: tr(lang, "Pre-book Business App", "Business App प्रि-बुक गर्नुहोस्"), to: "/merchant-registration" }}

@@ -66,7 +66,7 @@ const sections: LegalSection[] = [
     title: "6. Your Rights & Inquiries",
     body: [
       "You hold the right to review, update, or request the closure and data deletion of your registered account, subject to resolving active financial or delivery balances.",
-      "For questions regarding our privacy practices, reach our Data Protection Officer at privacy@panora.com.np or through our corporate office in Kathmandu, Nepal.",
+      "For questions regarding our privacy practices, reach our Data Protection Officer at info@panora.com.np or through our corporate office in Saptari, Madhesh Province, Nepal.",
     ],
   },
 ];

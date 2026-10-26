@@ -128,7 +128,7 @@ function Login() {
             )}
           </p>
           <p className="mt-2 text-xs text-white/70 max-w-sm">
-            PANORA Pvt. Ltd. — Kathmandu, Nepal
+            PANORA Pvt. Ltd. — Saptari, Madhesh Province, Nepal
           </p>
         </div>
       </div>

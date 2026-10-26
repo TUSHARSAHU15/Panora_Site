@@ -62,7 +62,7 @@ const sections: LegalSection[] = [
     title: "6. Governing Law & Jurisdiction",
     body: [
       "These Terms are governed by and construed in accordance with the laws of Nepal.",
-      "Any dispute arising from or related to these Terms shall be subject to the exclusive jurisdiction of the competent courts of Kathmandu, Nepal.",
+      "Any dispute arising from or related to these Terms shall be subject to the exclusive jurisdiction of the competent courts of Nepal.",
     ],
   },
 ];

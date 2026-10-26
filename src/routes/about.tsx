@@ -99,7 +99,7 @@ function About() {
             <div className="mt-8 flex items-center gap-4 text-xs font-bold text-navy">
               <div className="flex items-center gap-1.5 rounded-full bg-surface px-4 py-2 border border-border">
                 <MapPin className="h-3.5 w-3.5 text-brand" />
-                <span>Kathmandu, Nepal</span>
+                <span>Saptari, Madhesh Province, Nepal</span>
               </div>
               <div className="flex items-center gap-1.5 rounded-full bg-surface px-4 py-2 border border-border">
                 <ShieldCheck className="h-3.5 w-3.5 text-emerald-600" />

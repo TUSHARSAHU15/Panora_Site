@@ -13,12 +13,12 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Connect with the PANORA Pvt. Ltd. corporate team in Kathmandu, Nepal for business pre-booking, MoveX rider fleet inquiries, and institutional partnerships.",
+          "Connect with the PANORA Pvt. Ltd. corporate team in Saptari, Madhesh Province, Nepal for business pre-booking, MoveX rider fleet inquiries, and institutional partnerships.",
       },
       { property: "og:title", content: "Contact PANORA Pvt. Ltd. — Connect. Manage. Trade." },
       {
         property: "og:description",
-        content: "Reach our headquarters in Kathmandu, Nepal for inquiries, support, and partnerships.",
+        content: "Reach our headquarters in Saptari, Madhesh Province, Nepal for inquiries, support, and partnerships.",
       },
       { property: "og:url", content: "/contact" },
     ],
@@ -31,11 +31,34 @@ function Contact() {
   const { lang } = useLanguage();
   const c = site[lang].contact;
   const details = [
-    { icon: Mail, label: tr(lang, "General & Business Email", "सामान्य तथा व्यापारिक इमेल"), value: c.email },
-    { icon: HelpCircle, label: tr(lang, "Support & Helpdesk", "ग्राहक सहायता"), value: c.supportEmail },
-    { icon: Phone, label: tr(lang, "Phone / WhatsApp", "फोन / ह्वाट्सएप"), value: c.phone },
-    { icon: MapPin, label: tr(lang, "Headquarters Location", "केन्द्रीय कार्यालय"), value: c.location },
-    { icon: Clock, label: tr(lang, "Operating Hours", "सञ्चालन समय"), value: c.hours },
+    {
+      icon: Mail,
+      label: tr(lang, "General & Business Email", "सामान्य तथा व्यापारिक इमेल"),
+      value: c.email,
+      href: `mailto:${c.email}`,
+    },
+    {
+      icon: HelpCircle,
+      label: tr(lang, "Support & Helpdesk", "ग्राहक सहायता"),
+      value: c.supportEmail,
+      href: `mailto:${c.supportEmail}`,
+    },
+    {
+      icon: Phone,
+      label: tr(lang, "Phone / WhatsApp", "फोन / ह्वाट्सएप"),
+      value: c.phone,
+      href: `tel:${c.phone.replace(/[^+\d]/g, "")}`,
+    },
+    {
+      icon: MapPin,
+      label: tr(lang, "Headquarters Location", "केन्द्रीय कार्यालय"),
+      value: c.location,
+    },
+    {
+      icon: Clock,
+      label: tr(lang, "Operating Hours", "सञ्चालन समय"),
+      value: c.hours,
+    },
   ];
 
   return (
@@ -55,7 +78,7 @@ function Contact() {
         <Reveal>
           <div className="inline-flex items-center gap-2 rounded-full bg-brand/10 px-3.5 py-1 text-xs font-bold text-brand uppercase tracking-wider mb-4">
             <Building2 className="h-3.5 w-3.5" />
-            <span>{tr(lang, "Kathmandu Headquarters", "काठमाडौँ केन्द्रीय कार्यालय")}</span>
+            <span>{tr(lang, "Headquarters — Saptari", "केन्द्रीय कार्यालय — सप्तरी")}</span>
           </div>
 
           <h2 className="text-2xl font-extrabold sm:text-3xl text-navy">
@@ -79,7 +102,16 @@ function Contact() {
                   <span className="block text-[11px] font-bold uppercase tracking-wider text-muted-foreground">
                     {d.label}
                   </span>
-                  <span className="block text-sm font-semibold text-navy">{d.value}</span>
+                  {d.href ? (
+                    <a
+                      href={d.href}
+                      className="block text-sm font-semibold text-navy hover:text-brand transition-colors"
+                    >
+                      {d.value}
+                    </a>
+                  ) : (
+                    <span className="block text-sm font-semibold text-navy">{d.value}</span>
+                  )}
                 </span>
               </li>
             ))}
@@ -93,8 +125,8 @@ function Contact() {
             <p className="text-xs text-muted-foreground leading-relaxed">
               {tr(
                 lang,
-                "Registered with the Office of the Company Registrar, Government of Nepal. Operating in Bagmati Province and expanding nationwide.",
-                "कम्पनी रजिस्ट्रारको कार्यालय, नेपाल सरकारमा दर्ता भएको। बागमती प्रदेशबाट सञ्चालित र देशव्यापी विस्तारको क्रममा।"
+                "Registered with the Office of the Company Registrar, Government of Nepal. Operating in Madhesh Province and expanding nationwide.",
+                "कम्पनी रजिस्ट्रारको कार्यालय, नेपाल सरकारमा दर्ता भएको। मधेश प्रदेशबाट सञ्चालित र देशव्यापी विस्तारको क्रममा।"
               )}
             </p>
           </div>

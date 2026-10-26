@@ -9,11 +9,11 @@ export const site = {
     description:
       "PANORA Pvt. Ltd. is a technology company developing an integrated digital business ecosystem for Nepal. We unite everyday business management, parcel logistics coordination, and multi-vendor trade under one unified infrastructure.",
     contact: {
-      email: "contact@panora.com.np",
-      supportEmail: "support@panora.com.np",
+      email: "info@panora.com.np",
+      supportEmail: "info@panora.com.np",
       careersEmail: "careers@panora.com.np",
-      phone: "+977 1 5970000",
-      location: "Kathmandu, Bagmati Province, Nepal",
+      phone: "+977 9852822139",
+      location: "Saptari, Madhesh Province, Nepal",
       hours: "Sunday – Friday, 9:00 AM – 6:00 PM (NPT)",
     },
   },
@@ -25,11 +25,11 @@ export const site = {
     description:
       "PANORA Pvt. Ltd. नेपालका लागि एक एकीकृत डिजिटल व्यापार पारिस्थितिकी विकास गर्ने प्रविधि कम्पनी हो। हामी दैनिक व्यापार सञ्चालन, पार्सल डेलिभरी समन्वय, र बहु-विक्रेता व्यापारलाई एउटै पूर्वाधारमा जोड्छौं।",
     contact: {
-      email: "contact@panora.com.np",
-      supportEmail: "support@panora.com.np",
+      email: "info@panora.com.np",
+      supportEmail: "info@panora.com.np",
       careersEmail: "careers@panora.com.np",
-      phone: "+977 1 5970000",
-      location: "काठमाडौँ, बागमती प्रदेश, नेपाल",
+      phone: "+977 9852822139",
+      location: "सप्तरी, मधेश प्रदेश, नेपाल",
       hours: "आइतबार – शुक्रबार, बिहान ९:०० – साँझ ६:०० (NPT)",
     },
   },
