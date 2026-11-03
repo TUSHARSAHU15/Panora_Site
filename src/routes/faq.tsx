@@ -15,7 +15,7 @@ export const Route = createFileRoute("/faq")({
       {
         name: "description",
         content:
-          "Frequently asked questions about PANORA Pvt. Ltd., the Business App, MoveX Parcel App, Marketplace, and feature availability.",
+          "Frequently asked questions about PANORA Pvt. Ltd., the Business App, Rider App, Marketplace, and feature availability.",
       },
       { property: "og:title", content: "FAQ & Support — PANORA Pvt. Ltd." },
       { property: "og:description", content: "Answers about PANORA ecosystem, pre-booking, development status, and partnerships." },

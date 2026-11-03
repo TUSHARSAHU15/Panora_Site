@@ -5,22 +5,23 @@ import { Truck, CheckCircle2, ShieldCheck, Sparkles, Navigation, Wallet, Coins, 
 import { PageHero } from "@/components/panora/PageHero";
 import { Reveal } from "@/components/panora/Reveal";
 import { StatusBadge } from "@/components/panora/StatusBadge";
+import { PlayStoreButton } from "@/components/panora/PlayStoreButton";
 import { videos } from "@/config/videos";
 import { useLanguage, tr } from "@/lib/i18n";
 
 export const Route = createFileRoute("/rider-registration")({
   head: () => ({
     meta: [
-      { title: "Rider & Delivery Partner Registration — PANORA MoveX" },
+      { title: "Rider & Delivery Partner Registration — PANORA Rider" },
       {
         name: "description",
         content:
-          "Register as an early rider or delivery partner for PANORA MoveX Parcel App. Earn steady income, enjoy route optimization, and get transparent weekly payouts.",
+          "Register as an early rider or delivery partner for PANORA Rider App. Earn steady income, enjoy route optimization, and get transparent weekly payouts.",
       },
-      { property: "og:title", content: "MoveX Rider Registration — PANORA Pvt. Ltd." },
+      { property: "og:title", content: "PANORA Rider Registration — PANORA Pvt. Ltd." },
       {
         property: "og:description",
-        content: "Join the MoveX parcel logistics delivery network across Nepal.",
+        content: "Join the PANORA Rider parcel logistics delivery network across Nepal.",
       },
       { property: "og:url", content: "/rider-registration" },
     ],
@@ -61,8 +62,8 @@ function RiderRegistrationPage() {
         {
           description: tr(
             lang,
-            "Thank you. Our MoveX logistics team will verify your details and contact you for onboarding.",
-            "धन्यवाद। हाम्रो MoveX ढुवानी टोलीले विवरण प्रमाणीकरण गरी अनबोर्डिङका लागि सम्पर्क गर्नेछ।"
+            "Thank you. Our PANORA Rider logistics team will verify your details and contact you for onboarding.",
+            "धन्यवाद। हाम्रो PANORA Rider ढुवानी टोलीले विवरण प्रमाणीकरण गरी अनबोर्डिङका लागि सम्पर्क गर्नेछ।"
           ),
         }
       );
@@ -76,16 +77,16 @@ function RiderRegistrationPage() {
   return (
     <>
       <PageHero
-        eyebrow={tr(lang, "MoveX Partner Network", "MoveX साझेदार सञ्जाल")}
+        eyebrow={tr(lang, "PANORA Rider Partner Network", "PANORA Rider साझेदार सञ्जाल")}
         title={tr(lang, "Rider & Delivery Partner Registration", "राइडर तथा डेलिभरी साझेदार दर्ता")}
         subtitle={tr(
           lang,
-          "Apply to join the PANORA MoveX delivery network. Deliver parcels for local merchants and e-commerce brands with transparent pay and live route guidance.",
-          "PANORA MoveX ढुवानी सञ्जालमा जोडिन आवेदन दिनुहोस्। पारदर्शी आम्दानी र स्मार्ट रूटिङका साथ स्थानीय पसल तथा ई-कमर्सका पार्सल डेलिभरी गर्नुहोस्।"
+          "Apply to join the PANORA Rider delivery network. Deliver parcels for local merchants and e-commerce brands with transparent pay and live route guidance.",
+          "PANORA Rider ढुवानी सञ्जालमा जोडिन आवेदन दिनुहोस्। पारदर्शी आम्दानी र स्मार्ट रूटिङका साथ स्थानीय पसल तथा ई-कमर्सका पार्सल डेलिभरी गर्नुहोस्।"
         )}
         crumbs={[
           { label: tr(lang, "Products", "उत्पादनहरू"), to: "/products" },
-          { label: "MoveX", to: "/products/movex" },
+          { label: "PANORA Rider", to: "/products/movex" },
           { label: tr(lang, "Rider Registration", "राइडर दर्ता") },
         ]}
         video={videos.delivery}
@@ -151,6 +152,11 @@ function RiderRegistrationPage() {
                     <li>{tr(lang, "Android or iOS Smartphone with Internet", "इन्टरनेट चल्ने स्मार्टफोन")}</li>
                   </ul>
                 </div>
+
+                <div className="pt-2 flex items-center justify-between gap-3 border-t border-border">
+                  <span className="text-xs font-semibold text-navy">{tr(lang, "Get Rider App:", "राइडर एप डाउनलोड गर्नुहोस्:")}</span>
+                  <PlayStoreButton app="rider" size="sm" theme="emerald" />
+                </div>
               </div>
             </Reveal>
           </div>
@@ -170,11 +176,14 @@ function RiderRegistrationPage() {
                     <p className="text-sm text-muted-foreground max-w-md mx-auto leading-relaxed">
                       {tr(
                         lang,
-                        "Thank you for registering. Our MoveX fleet operations team will review your application and contact you for document verification.",
-                        "दर्ता गर्नुभएकोमा धन्यवाद। हाम्रो MoveX सञ्चालन टोलीले तपाईंको कागजात प्रमाणीकरणका लागि सम्पर्क गर्नेछ।"
+                        "Thank you for registering. Our PANORA Rider fleet operations team will review your application and contact you for document verification.",
+                        "दर्ता गर्नुभएकोमा धन्यवाद। हाम्रो PANORA Rider सञ्चालन टोलीले तपाईंको कागजात प्रमाणीकरणका लागि सम्पर्क गर्नेछ।"
                       )}
                     </p>
-                    <div className="pt-6 flex justify-center gap-4">
+                    <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3">
+                      <PlayStoreButton app="rider" size="md" theme="emerald" />
+                    </div>
+                    <div className="pt-3 flex justify-center gap-4">
                       <button
                         onClick={() => setSubmitted(false)}
                         className="rounded-full border border-border px-6 py-2.5 text-xs font-bold text-navy hover:border-emerald-600"
@@ -185,7 +194,7 @@ function RiderRegistrationPage() {
                         to="/products/movex"
                         className="rounded-full bg-emerald-600 px-6 py-2.5 text-xs font-bold text-white shadow-brand hover:bg-emerald-700"
                       >
-                        {tr(lang, "Read About MoveX", "MoveX बारे पढ्नुहोस्")}
+                        {tr(lang, "Read About PANORA Rider", "PANORA Rider बारे पढ्नुहोस्")}
                       </Link>
                     </div>
                   </div>

@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { ArrowRight, Sparkles, Smartphone, Package, ShoppingBag, ShieldCheck } from "lucide-react";
 import { BackgroundVideo } from "./BackgroundVideo";
 import { StatusBadge } from "./StatusBadge";
+import { PlayStoreButton } from "./PlayStoreButton";
 import { heroSequence } from "@/config/videos";
 import { useLanguage, tr } from "@/lib/i18n";
 
@@ -50,8 +51,8 @@ export function HomeHero() {
         <h1 className="mt-6 max-w-4xl text-[2.6rem] font-extrabold leading-[1.04] tracking-tight sm:text-6xl lg:text-7xl">
           {tr(
             lang,
-            "Building Nepal's Integrated Digital Business Ecosystem",
-            "नेपालको एकीकृत डिजिटल व्यवसाय र ढुवानी पारिस्थितिकी"
+            "A Connected digital Business Ecosystem",
+            "एक जोडिएको डिजिटल व्यवसाय पारिस्थितिकी"
           )}
         </h1>
 
@@ -59,8 +60,8 @@ export function HomeHero() {
         <p className="mt-6 max-w-2xl text-lg text-white/85 sm:text-xl leading-relaxed">
           {tr(
             lang,
-            "Unifying business workflows, on-demand parcel logistics, and transparent trade under one cohesive technology framework. Built for the reality of Nepalese commerce.",
-            "व्यावसायिक कार्यप्रवाह, अन-डिमान्ड पार्सल ढुवानी, र पारदर्शी बजारलाई एउटै प्रविधि संरचनामा जोड्दै। नेपाली व्यापारको वास्तविक धरातलका लागि निर्मित।"
+            "Unifying business workflows, intelligent logistics, and seamless commerce under one connected technology ecosystem.",
+            "व्यावसायिक कार्यप्रवाह, बौद्धिक ढुवानी, र सहज व्यापारलाई एउटै प्रविधि संरचनामा जोड्दै।"
           )}
         </p>
 
@@ -77,7 +78,7 @@ export function HomeHero() {
             to="/rider-registration"
             className="inline-flex items-center gap-2 rounded-full border border-white/45 bg-white/10 px-6 py-3.5 text-sm font-bold text-white backdrop-blur transition-all hover:bg-white/20"
           >
-            {tr(lang, "Join MoveX Rider Network", "MoveX राइडर बन्नुहोस्")}
+            {tr(lang, "Join PANORA Rider Network", "PANORA Rider बन्नुहोस्")}
           </Link>
           <Link
             to="/products"
@@ -125,7 +126,7 @@ export function HomeHero() {
                   <Package className="h-4 w-4" />
                 </div>
                 <h2 className="text-sm font-bold text-white group-hover:text-brand-cyan transition-colors">
-                  MoveX Parcel App
+                  PANORA Rider App
                 </h2>
               </div>
               <StatusBadge status="In Development" size="sm" theme="dark" highlighted />

@@ -15,6 +15,7 @@ import {
 import { PageHero } from "@/components/panora/PageHero";
 import { Reveal } from "@/components/panora/Reveal";
 import { StatusBadge } from "@/components/panora/StatusBadge";
+import { PlayStoreButton } from "@/components/panora/PlayStoreButton";
 import { videos } from "@/config/videos";
 import { productsDetail } from "@/config/site";
 import { useLanguage, tr } from "@/lib/i18n";
@@ -22,13 +23,13 @@ import { useLanguage, tr } from "@/lib/i18n";
 export const Route = createFileRoute("/products/movex")({
   head: () => ({
     meta: [
-      { title: "PANORA MoveX Parcel App — Reliable Parcel Delivery & Rider Network" },
+      { title: "PANORA Rider App — Reliable Parcel Delivery & Rider Network" },
       {
         name: "description",
         content:
-          "PANORA MoveX is a parcel pickup and delivery coordination product connecting eligible businesses, riders, and customers across Nepal with transparent tracking and COD reconciliation.",
+          "PANORA Rider App is a parcel pickup and delivery coordination product connecting eligible businesses, riders, and customers across Nepal with transparent tracking and COD reconciliation.",
       },
-      { property: "og:title", content: "PANORA MoveX Parcel App — Connect. Manage. Trade." },
+      { property: "og:title", content: "PANORA Rider App — Connect. Manage. Trade." },
       {
         property: "og:description",
         content: "Smart parcel dispatch, verified rider coordination, and guaranteed Cash-on-Delivery settlement for Nepal.",
@@ -52,7 +53,7 @@ function MoveXPage() {
         subtitle={prod.tagline}
         crumbs={[
           { label: tr(lang, "Products", "उत्पादनहरू"), to: "/products" },
-          { label: "MoveX Parcel App" },
+          { label: "PANORA Rider App" },
         ]}
         video={videos.delivery}
       />
@@ -66,12 +67,15 @@ function MoveXPage() {
               <strong>{tr(lang, "Rollout Status:", "सञ्चालन स्थिति:")}</strong> {prod.readinessSummary}
             </span>
           </div>
-          <Link
-            to="/rider-registration"
-            className="rounded-full bg-emerald-600 px-5 py-2 text-xs font-bold text-white shadow-brand hover:bg-emerald-700 shrink-0"
-          >
-            {tr(lang, "Join Rider Partner Network", "राइडर साझेदार बन्नुहोस्")}
-          </Link>
+          <div className="flex items-center gap-2.5">
+            <PlayStoreButton app="rider" size="sm" theme="emerald" />
+            <Link
+              to="/rider-registration"
+              className="rounded-full bg-emerald-600 px-5 py-2 text-xs font-bold text-white shadow-brand hover:bg-emerald-700 shrink-0"
+            >
+              {tr(lang, "Join Rider Partner Network", "राइडर साझेदार बन्नुहोस्")}
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -95,12 +99,13 @@ function MoveXPage() {
             <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
               {tr(
                 lang,
-                "In Nepal, last-mile parcel logistics suffers from opaque tracking, missing packages, and delayed Cash-on-Delivery (COD) settlements that strangle merchant cash flow. MoveX coordinates the entire loop — from merchant booking to rider assignment, live map tracking, secure OTP handovers, and automated digital ledger updates.",
-                "नेपालमा पार्सल ढुवानीमा ट्र्याकिङ नहुने, सामान हराउने र क्यास-अन-डेलिभरी (COD) रकम महिनौंसम्म रोकिने ठूलो समस्या छ। MoveX ले पार्सल बुकिङ, राइडर तोक्ने, लाइभ ट्र्याकिङ, सुरक्षित OTP र बैंक खातामा निश्चित समयमै रकम भुक्तानी गरी यो समस्या समाधान गर्दछ।"
+                "In Nepal, last-mile parcel logistics suffers from opaque tracking, missing packages, and delayed Cash-on-Delivery (COD) settlements that strangle merchant cash flow. PANORA Rider coordinates the entire loop — from merchant booking to rider assignment, live map tracking, secure OTP handovers, and automated digital ledger updates.",
+                "नेपालमा पार्सल ढुवानीमा ट्र्याकिङ नहुने, सामान हराउने र क्यास-अन-डेलिभरी (COD) रकम महिनौंसम्म रोकिने ठूलो समस्या छ। PANORA Rider ले पार्सल बुकिङ, राइडर तोक्ने, लाइभ ट्र्याकिङ, सुरक्षित OTP र बैंक खातामा निश्चित समयमै रकम भुक्तानी गरी यो समस्या समाधान गर्दछ।"
               )}
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-4">
+            <div className="mt-8 flex flex-wrap items-center gap-4">
+              <PlayStoreButton app="rider" size="md" theme="emerald" />
               <Link
                 to="/rider-registration"
                 className="group inline-flex items-center gap-2 rounded-full bg-emerald-600 px-6 py-3.5 text-xs font-bold text-white shadow-brand hover:bg-emerald-700"
@@ -121,7 +126,7 @@ function MoveXPage() {
           <Reveal delay={120}>
             <div className="space-y-4">
               <h3 className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
-                {tr(lang, "Logistics Bottlenecks Solved By MoveX:", "MoveX ले हटाउने मुख्य समस्याहरू:")}
+                {tr(lang, "Logistics Bottlenecks Solved By PANORA Rider:", "PANORA Rider ले हटाउने मुख्य समस्याहरू:")}
               </h3>
               {prod.problemsSolved.map((item, idx) => (
                 <div key={idx} className="rounded-2xl border border-border bg-white p-5 shadow-soft">
@@ -148,7 +153,7 @@ function MoveXPage() {
               {tr(lang, "System Capabilities", "प्रणालीका क्षमताहरू")}
             </span>
             <h2 className="mt-3 text-3xl font-extrabold sm:text-4xl text-navy">
-              {tr(lang, "MoveX Features & Rollout Status", "MoveX सुविधाहरू र विकास स्थिति")}
+              {tr(lang, "PANORA Rider Features & Rollout Status", "PANORA Rider सुविधाहरू र विकास स्थिति")}
             </h2>
           </Reveal>
 

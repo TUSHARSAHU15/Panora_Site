@@ -28,8 +28,8 @@ const sections: LegalSection[] = [
     id: "product-lifecycle-disclaimer",
     title: "2. Product Lifecycle & Development Status",
     body: [
-      "PANORA Pvt. Ltd. is actively engineering its ecosystem. You acknowledge that features labeled as 'In Development' or 'Planned' represent active work and forward-looking product roadmaps.",
-      "Early adopter beta registrations for the PANORA Business App and MoveX Parcel App provide priority access to pilot releases, which may be refined based on merchant and rider testing.",
+      "PANORA Pvt. Ltd. is actively engineering its ecosystem. You acknowledge that features labeled as 'Live' or 'Planned' represent active work and forward-looking product roadmaps.",
+      "Early adopter beta registrations for the PANORA Business App and Rider App provide priority access to pilot releases, which may be refined based on merchant and rider testing.",
     ],
   },
   {

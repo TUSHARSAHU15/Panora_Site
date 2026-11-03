@@ -71,7 +71,7 @@ export const productsNav = {
       blurb: "Unified B2B & B2C app for merchants, retailers & distributors to simplify wholesale restock and retail counter sales.",
     },
     {
-      label: "PANORA MoveX Parcel App",
+      label: "PANORA Rider App",
       to: "/products/movex",
       status: "In Development" as FeatureStatus,
       blurb: "Parcel pickup, delivery coordination, and real-time rider tracking.",
@@ -91,7 +91,7 @@ export const productsNav = {
       blurb: "व्यापारी, खुद्रा विक्रेता र वितरकका लागि B2B थोक खरिद र B2C खुद्रा बिक्री सञ्चालन गर्ने एकीकृत एप।",
     },
     {
-      label: "PANORA MoveX Parcel App",
+      label: "PANORA Rider App",
       to: "/products/movex",
       status: "In Development" as FeatureStatus,
       blurb: "पार्सल पिकअप, डेलिभरी समन्वय र वास्तविक समयको राइडर ट्र्याकिङ।",
@@ -189,12 +189,12 @@ export const productsDetail = {
     },
     movex: {
       id: "movex",
-      name: "PANORA MoveX Parcel App",
+      name: "PANORA Rider App",
       tagline: "Reliable parcel pickup, transparent delivery coordination, and rider empowerment.",
       status: "In Development" as FeatureStatus,
       readinessSummary: "In active engineering. Parcel booking architecture and rider dispatch flows are being piloted in selected zones of the Kathmandu Valley. Rider and fleet onboarding is currently accepting applications.",
       overview:
-        "PANORA MoveX is our dedicated logistics and parcel coordination product. It bridges businesses, local couriers, independent riders, and customers into one reliable delivery network designed for the unique geographic realities of Nepal.",
+        "PANORA Rider is our dedicated logistics and parcel coordination product. It bridges businesses, local couriers, independent riders, and customers into one reliable delivery network designed for the unique geographic realities of Nepal.",
       targetUsers: [
         "Local Businesses & E-commerce Merchants requiring scheduled or on-demand parcel dispatch",
         "Independent Two-Wheeler Riders & Fleet Operators seeking steady delivery earnings",
@@ -308,12 +308,12 @@ export const productsDetail = {
     },
     movex: {
       id: "movex",
-      name: "PANORA MoveX Parcel App",
+      name: "PANORA Rider App",
       tagline: "भरपर्दो पार्सल पिकअप, पारदर्शी डेलिभरी समन्वय, र राइडर सशक्तीकरण।",
       status: "In Development" as FeatureStatus,
       readinessSummary: "सक्रिय विकासमा छ। पार्सल बुकिङ र राइडर प्रेषण प्रणाली काठमाडौँ उपत्यकाका छानिएका क्षेत्रहरूमा परीक्षण भइरहेको छ। राइडर र फ्लीट साझेदारहरूको आवेदन खुला छ।",
       overview:
-        "PANORA MoveX हाम्रो समर्पित ढुवानी तथा पार्सल समन्वय उत्पादन हो। यसले व्यवसाय, स्थानीय कुरियर, स्वतन्त्र राइडर र ग्राहकहरूलाई नेपालको भौगोलिक वास्तविकता अनुकूल भरपर्दो नेटवर्कमा जोड्छ।",
+        "PANORA Rider हाम्रो समर्पित ढुवानी तथा पार्सल समन्वय उत्पादन हो। यसले व्यवसाय, स्थानीय कुरियर, स्वतन्त्र राइडर र ग्राहकहरूलाई नेपालको भौगोलिक वास्तविकता अनुकूल भरपर्दो नेटवर्कमा जोड्छ।",
       targetUsers: [
         "पार्सल पठाउन चाहने स्थानीय व्यवसाय तथा ई-कमर्स बिक्रेता",
         "स्थिर आम्दानी खोज्ने स्वतन्त्र दुई-पाङ्ग्रे राइडर तथा ढुवानी कम्पनीहरू",
@@ -610,7 +610,7 @@ export const careerOpenings = [
     department: "Engineering",
     location: "Kathmandu, Nepal",
     type: "Full-Time",
-    description: "Build the companion mobile apps for PANORA MoveX riders and retail merchant point-of-sale workflows.",
+    description: "Build the companion mobile apps for PANORA Rider riders and retail merchant point-of-sale workflows.",
   },
   {
     title: "Merchant Onboarding & Field Operations Lead",
@@ -635,7 +635,7 @@ export const faqCategories = {
       items: [
         {
           q: "What is PANORA Pvt. Ltd.?",
-          a: "PANORA Pvt. Ltd. is a registered Nepalese technology company building an integrated digital business ecosystem. We are not just a B2B ordering portal; our product portfolio spans the PANORA Business App (for store management & trade), PANORA MoveX (for parcel logistics), and PANORA Marketplace (for product discovery and trade).",
+          a: "PANORA Pvt. Ltd. is a registered Nepalese technology company building an integrated digital business ecosystem. We are not just a B2B ordering portal; our product portfolio spans the PANORA Business App (for store management & trade), PANORA Rider (for parcel logistics), and PANORA Marketplace (for product discovery and trade).",
         },
         {
           q: "What does 'Connect. Manage. Trade.' mean?",
@@ -643,7 +643,7 @@ export const faqCategories = {
         },
         {
           q: "Are all PANORA products currently live?",
-          a: "We believe in radical honesty. Our ecosystem is being rolled out in strategic phases. The PANORA Business App and PANORA MoveX are currently in active engineering and pilot testing ('In Development'), while advanced marketplace features and cross-border trade are 'Planned'. Merchant pre-booking and rider partner registration are 'Available' now.",
+          a: "We believe in radical honesty. Our ecosystem is being rolled out in strategic phases. The PANORA Business App and PANORA Rider App are currently 'Live', while advanced marketplace features and cross-border trade are 'Planned'. Merchant pre-booking and rider partner registration are 'Available' now.",
         },
       ],
     },
@@ -665,11 +665,11 @@ export const faqCategories = {
       ],
     },
     {
-      category: "PANORA MoveX Parcel App",
+      category: "PANORA Rider App",
       items: [
         {
-          q: "What is PANORA MoveX?",
-          a: "MoveX is our parcel logistics coordination product. It facilitates on-demand and scheduled parcel pickups, connects businesses with reliable riders, provides real-time tracking, and manages Cash-on-Delivery (COD) reconciliation.",
+          q: "What is PANORA Rider?",
+          a: "PANORA Rider is our parcel logistics coordination product. It facilitates on-demand and scheduled parcel pickups, connects businesses with reliable riders, provides real-time tracking, and manages Cash-on-Delivery (COD) reconciliation.",
         },
         {
           q: "How can riders and delivery partners join?",
@@ -701,7 +701,7 @@ export const faqCategories = {
       items: [
         {
           q: "PANORA Pvt. Ltd. के हो?",
-          a: "PANORA Pvt. Ltd. नेपालमा दर्ता भएको प्रविधि कम्पनी हो जसले एकीकृत डिजिटल व्यवसाय पारिस्थितिकी निर्माण गरिरहेको छ। यो केवल अर्डर गर्ने प्लेटफर्म मात्र होइन; हाम्रो उत्पादनहरूमा PANORA Business App (पसल सञ्चालन तथा व्यापार), PANORA MoveX (पार्सल ढुवानी), र PANORA Marketplace (उत्पादन खोज तथा व्यापार) समावेश छन्।",
+          a: "PANORA Pvt. Ltd. नेपालमा दर्ता भएको प्रविधि कम्पनी हो जसले एकीकृत डिजिटल व्यवसाय पारिस्थितिकी निर्माण गरिरहेको छ। यो केवल अर्डर गर्ने प्लेटफर्म मात्र होइन; हाम्रो उत्पादनहरूमा PANORA Business App (पसल सञ्चालन तथा व्यापार), PANORA Rider (पार्सल ढुवानी), र PANORA Marketplace (उत्पादन खोज तथा व्यापार) समावेश छन्।",
         },
         {
           q: "'Connect. Manage. Trade.' को अर्थ के हो?",
@@ -709,7 +709,7 @@ export const faqCategories = {
         },
         {
           q: "के सबै PANORA उत्पादनहरू अहिले नै उपलब्ध छन्?",
-          a: "हामी पूर्ण पारदर्शितामा विश्वास गर्छौं। हाम्रा उत्पादनहरू चरणबद्ध रूपमा विकास भइरहेका छन्। PANORA Business App र MoveX हाल सक्रिय विकास र परीक्षणमा छन् ('विकासमा'), जबकि केही ठूला बजार सुविधाहरू 'योजनाबद्ध' छन्। व्यापारी प्रि-बुकिङ र राइडर दर्ता अहिले नै 'उपलब्ध' छन्।",
+          a: "हामी पूर्ण पारदर्शितामा विश्वास गर्छौं। हाम्रा उत्पादनहरू चरणबद्ध रूपमा विकास भइरहेका छन्। PANORA Business App र Rider App हाल सक्रिय रूपमा 'लाइभ' छन्, जबकि केही ठूला बजार सुविधाहरू 'योजनाबद्ध' छन्। व्यापारी प्रि-बुकिङ र राइडर दर्ता अहिले नै 'उपलब्ध' छन्।",
         },
       ],
     },
@@ -727,11 +727,11 @@ export const faqCategories = {
       ],
     },
     {
-      category: "PANORA MoveX Parcel App",
+      category: "PANORA Rider App",
       items: [
         {
-          q: "PANORA MoveX के हो?",
-          a: "MoveX हाम्रो पार्सल ढुवानी तथा डेलिभरी समन्वय गर्ने उत्पादन हो। यसले व्यवसायलाई भरपर्दो राइडरसँग जोड्छ, पार्सलको लाइभ ट्र्याकिङ दिन्छ, र क्यास-अन-डेलिभरी (COD) को पारदर्शी हिसाब राख्छ।",
+          q: "PANORA Rider के हो?",
+          a: "PANORA Rider हाम्रो पार्सल ढुवानी तथा डेलिभरी समन्वय गर्ने उत्पादन हो। यसले व्यवसायलाई भरपर्दो राइडरसँग जोड्छ, पार्सलको लाइभ ट्र्याकिङ दिन्छ, र क्यास-अन-डेलिभरी (COD) को पारदर्शी हिसाब राख्छ।",
         },
         {
           q: "डेलिभरी राइडरहरू कसरी जोडिन सक्छन्?",

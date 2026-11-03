@@ -14,6 +14,7 @@ import {
 import { PageHero } from "@/components/panora/PageHero";
 import { Reveal } from "@/components/panora/Reveal";
 import { StatusBadge } from "@/components/panora/StatusBadge";
+import { PlayStoreButton } from "@/components/panora/PlayStoreButton";
 import { videos } from "@/config/videos";
 import { productsDetail } from "@/config/site";
 import { useLanguage, tr } from "@/lib/i18n";
@@ -65,12 +66,15 @@ function MarketplacePage() {
               <strong>{tr(lang, "Current Status:", "हालको अवस्था:")}</strong> {prod.readinessSummary}
             </span>
           </div>
-          <Link
-            to="/contact"
-            className="rounded-full bg-purple-600 px-5 py-2 text-xs font-bold text-white shadow-brand hover:bg-purple-700 shrink-0"
-          >
-            {tr(lang, "List As Verified Supplier", "प्रमाणित आपूर्तिकर्ताका रूपमा जोडिनुहोस्")}
-          </Link>
+          <div className="flex items-center gap-2.5">
+            <PlayStoreButton size="sm" />
+            <Link
+              to="/contact"
+              className="rounded-full bg-purple-600 px-5 py-2 text-xs font-bold text-white shadow-brand hover:bg-purple-700 shrink-0"
+            >
+              {tr(lang, "List As Verified Supplier", "प्रमाणित आपूर्तिकर्ताका रूपमा जोडिनुहोस्")}
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -99,7 +103,8 @@ function MarketplacePage() {
               )}
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-4">
+            <div className="mt-8 flex flex-wrap items-center gap-4">
+              <PlayStoreButton size="md" />
               <Link
                 to="/merchant-registration"
                 className="group inline-flex items-center gap-2 rounded-full bg-purple-600 px-6 py-3.5 text-xs font-bold text-white shadow-brand hover:bg-purple-700"

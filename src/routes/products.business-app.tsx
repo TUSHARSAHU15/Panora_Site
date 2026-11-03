@@ -16,6 +16,7 @@ import {
 import { PageHero } from "@/components/panora/PageHero";
 import { Reveal } from "@/components/panora/Reveal";
 import { StatusBadge } from "@/components/panora/StatusBadge";
+import { PlayStoreButton } from "@/components/panora/PlayStoreButton";
 import { videos } from "@/config/videos";
 import { productsDetail } from "@/config/site";
 import { useLanguage, tr } from "@/lib/i18n";
@@ -67,12 +68,15 @@ function BusinessAppPage() {
               <strong>{tr(lang, "Development Phase:", "विकास चरण:")}</strong> {prod.readinessSummary}
             </span>
           </div>
-          <Link
-            to="/merchant-registration"
-            className="rounded-full bg-brand-gradient px-5 py-2 text-xs font-bold text-white shadow-brand hover:opacity-95 shrink-0"
-          >
-            {tr(lang, "Pre-book Beta Access", "बेटा प्रि-बुक गर्नुहोस्")}
-          </Link>
+          <div className="flex items-center gap-2.5">
+            <PlayStoreButton size="sm" />
+            <Link
+              to="/merchant-registration"
+              className="rounded-full bg-brand-gradient px-5 py-2 text-xs font-bold text-white shadow-brand hover:opacity-95 shrink-0"
+            >
+              {tr(lang, "Pre-book Beta Access", "बेटा प्रि-बुक गर्नुहोस्")}
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -101,7 +105,8 @@ function BusinessAppPage() {
               )}
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-4">
+            <div className="mt-8 flex flex-wrap items-center gap-4">
+              <PlayStoreButton size="md" />
               <Link
                 to="/merchant-registration"
                 className="group inline-flex items-center gap-2 rounded-full bg-brand-gradient px-6 py-3.5 text-xs font-bold text-white shadow-brand hover:opacity-95"

@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Facebook, Instagram, Linkedin, Twitter, MapPin, Mail, Phone, ShieldCheck } from "lucide-react";
 import { Logo } from "./Logo";
+import { PlayStoreButton } from "./PlayStoreButton";
 import { site } from "@/config/site";
 import { useLanguage, tr } from "@/lib/i18n";
 
@@ -12,7 +13,7 @@ export function Footer() {
       title: tr(lang, "Products", "उत्पादनहरू"),
       links: [
         { label: tr(lang, "PANORA Business App", "PANORA Business App"), to: "/products/business-app" },
-        { label: tr(lang, "PANORA MoveX Parcel App", "PANORA MoveX Parcel App"), to: "/products/movex" },
+        { label: tr(lang, "PANORA Rider App", "PANORA Rider App"), to: "/products/movex" },
         { label: tr(lang, "PANORA Marketplace", "PANORA Marketplace"), to: "/products/marketplace" },
         { label: tr(lang, "All Products & Roadmap", "सबै उत्पादन तथा मार्गचित्र"), to: "/products" },
       ],
@@ -88,17 +89,21 @@ export function Footer() {
               </div>
             </div>
 
-            <div className="pt-3 flex gap-2.5">
-              {[Facebook, Instagram, Linkedin, Twitter].map((Icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  aria-label="PANORA social profile"
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-white/80 transition-colors hover:border-white/60 hover:text-white hover:bg-white/10"
-                >
-                  <Icon className="h-4 w-4" />
-                </a>
-              ))}
+            <div className="pt-3 flex flex-wrap items-center gap-2.5">
+              <PlayStoreButton app="merchant" size="xs" />
+              <PlayStoreButton app="rider" size="xs" theme="emerald" />
+              <div className="flex gap-2">
+                {[Facebook, Instagram, Linkedin, Twitter].map((Icon, i) => (
+                  <a
+                    key={i}
+                    href="#"
+                    aria-label="PANORA social profile"
+                    className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-white/80 transition-colors hover:border-white/60 hover:text-white hover:bg-white/10"
+                  >
+                    <Icon className="h-4 w-4" />
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
 
@@ -128,8 +133,8 @@ export function Footer() {
               <strong className="text-white font-semibold">{tr(lang, "PANORA Ecosystem Transparency Notice:", "PANORA पारिस्थितिकी पारदर्शिता सूचना:")}</strong>{" "}
               {tr(
                 lang,
-                "PANORA Pvt. Ltd. is actively engineering its products for sustainable long-term impact across Nepal. Features are transparently labeled as Available, In Development, or Planned based on actual operational readiness.",
-                "PANORA Pvt. Ltd. ले नेपालभरि दिगो प्रभावका लागि आफ्ना उत्पादनहरूको सक्रिय निर्माण गरिरहेको छ। हाम्रा सुविधाहरू वास्तविक तयारीका आधारमा उपलब्ध, विकासमा, वा योजनाबद्ध भनी स्पष्ट रूपमा चिन्हित गरिएका छन्।"
+                "PANORA Pvt. Ltd. is actively engineering its products for sustainable long-term impact across Nepal. Features are transparently labeled as Available, Live, or Planned based on actual operational readiness.",
+                "PANORA Pvt. Ltd. ले नेपालभरि दिगो प्रभावका लागि आफ्ना उत्पादनहरूको सक्रिय निर्माण गरिरहेको छ। हाम्रा सुविधाहरू वास्तविक तयारीका आधारमा उपलब्ध, लाइभ, वा योजनाबद्ध भनी स्पष्ट रूपमा चिन्हित गरिएका छन्।"
               )}
             </p>
           </div>

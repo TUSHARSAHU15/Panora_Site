@@ -85,7 +85,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "PANORA Pvt. Ltd. is building an integrated digital business ecosystem for Nepal: PANORA Business App, PANORA MoveX Parcel App, and PANORA Marketplace.",
+          "PANORA Pvt. Ltd. is building an integrated digital business ecosystem for Nepal: PANORA Business App, PANORA Rider App, and PANORA Marketplace.",
       },
       { name: "author", content: "PANORA Pvt. Ltd." },
       { property: "og:site_name", content: "PANORA Pvt. Ltd." },

@@ -24,7 +24,7 @@ export const Route = createFileRoute("/how-it-works")({
       {
         name: "description",
         content:
-          "Discover how the PANORA Business App, MoveX Parcel App, and Marketplace synchronize everyday operations, logistics, and trade across Nepal.",
+          "Discover how the PANORA Business App, Rider App, and Marketplace synchronize everyday operations, logistics, and trade across Nepal.",
       },
       { property: "og:title", content: "How It Works — PANORA Pvt. Ltd." },
       {
@@ -45,7 +45,7 @@ function HowItWorksPage() {
     {
       num: "01",
       pillar: "PANORA Marketplace",
-      badge: "In Development",
+      badge: "Live",
       title: tr(lang, "Product Discovery & Wholesale Ordering", "उत्पादन खोज तथा थोक अर्डर"),
       desc: tr(
         lang,
@@ -58,7 +58,7 @@ function HowItWorksPage() {
     {
       num: "02",
       pillar: "PANORA Business App",
-      badge: "In Development",
+      badge: "Live",
       title: tr(lang, "Distributor Acceptance & Warehouse Packing", "वितरकद्वारा स्वीकृति र गोदाम प्याकिङ"),
       desc: tr(
         lang,
@@ -70,8 +70,8 @@ function HowItWorksPage() {
     },
     {
       num: "03",
-      pillar: "PANORA MoveX Parcel App",
-      badge: "In Development",
+      pillar: "PANORA Rider App",
+      badge: "Live",
       title: tr(lang, "Rider Assignment & Secure Transit", "राइडर तोकिने र सुरक्षित ढुवानी"),
       desc: tr(
         lang,
@@ -84,7 +84,7 @@ function HowItWorksPage() {
     {
       num: "04",
       pillar: "Ecosystem Settlement",
-      badge: "In Development",
+      badge: "Live",
       title: tr(lang, "OTP Delivery & Khata Reconciliation", "OTP हस्तान्तरण र डिजिटल हिसाब मिलान"),
       desc: tr(
         lang,
@@ -122,7 +122,7 @@ function HowItWorksPage() {
           <p className="mt-4 text-base text-muted-foreground leading-relaxed">
             {tr(
               lang,
-              "Instead of dealing with three different phone calls and messy paper slips, PANORA synchronizes every stage between the PANORA Business App, MoveX Parcel App, and PANORA Marketplace.",
+              "Instead of dealing with three different phone calls and messy paper slips, PANORA synchronizes every stage between the PANORA Business App, Rider App, and PANORA Marketplace.",
               "तीनवटा अलग-अलग फोन कल र हराउने कागजका बिलहरूको झन्झट अन्त्य गर्दै, PANORA ले Business App, MoveX, र Marketplace बीच हरेक चरण स्वतः मिलाउँछ।"
             )}
           </p>

@@ -123,8 +123,8 @@ function Login() {
           <p className="max-w-sm text-2xl font-extrabold leading-snug">
             {tr(
               lang,
-              "Building Nepal's Integrated Digital Business Ecosystem.",
-              "नेपालको एकीकृत डिजिटल व्यवसाय र ढुवानी पारिस्थितिकी।"
+              "A Connected digital Business Ecosystem.",
+              "एक जोडिएको डिजिटल व्यवसाय पारिस्थितिकी।"
             )}
           </p>
           <p className="mt-2 text-xs text-white/70 max-w-sm">

@@ -60,7 +60,7 @@ function Solutions() {
     },
     {
       title: tr(lang, "For Delivery Partners & Fleets", "डेलिभरी साझेदार तथा राइडरहरू"),
-      subtitle: tr(lang, "Powered by PANORA MoveX Parcel App", "PANORA MoveX Parcel App द्वारा सञ्चालित"),
+      subtitle: tr(lang, "Powered by PANORA Rider App", "PANORA Rider App द्वारा सञ्चालित"),
       body: tr(
         lang,
         "Receive regular commercial parcel deliveries, follow optimized routes, verify handovers with secure OTP, and enjoy guaranteed weekly bank payouts.",

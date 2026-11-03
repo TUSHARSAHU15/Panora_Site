@@ -22,6 +22,7 @@ import { BackgroundVideo } from "@/components/panora/BackgroundVideo";
 import { Reveal } from "@/components/panora/Reveal";
 import { Counter } from "@/components/panora/Counter";
 import { StatusBadge } from "@/components/panora/StatusBadge";
+import { PlayStoreButton } from "@/components/panora/PlayStoreButton";
 import { videos } from "@/config/videos";
 import { stats, whyPanora, productsDetail } from "@/config/site";
 import { useLanguage, tr } from "@/lib/i18n";
@@ -33,7 +34,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "PANORA Pvt. Ltd. is building an integrated digital business ecosystem for Nepal: the PANORA Business App, PANORA MoveX Parcel App, and PANORA Marketplace.",
+          "PANORA Pvt. Ltd. is building an integrated digital business ecosystem for Nepal: the PANORA Business App, PANORA Rider App, and PANORA Marketplace.",
       },
       { property: "og:title", content: "PANORA Pvt. Ltd. — Connect. Manage. Trade." },
       {
@@ -102,7 +103,7 @@ function Home() {
           <p className="mt-4 text-muted-foreground leading-relaxed">
             {tr(
               lang,
-              "Instead of separate uncoordinated tools, we are developing three unified product pillars designed to work in synergy: the PANORA Business App, PANORA MoveX Parcel App, and PANORA Marketplace.",
+              "Instead of separate uncoordinated tools, we are developing three unified product pillars designed to work in synergy: the PANORA Business App, PANORA Rider App, and PANORA Marketplace.",
               "अलग-अलग र छरिएका सफ्टवेयरको सट्टा, हामी एकआपसमा जोडिएर काम गर्ने तीनवटा मुख्य उत्पादनहरू विकास गर्दैछौं: Business App, MoveX पार्सल एप, र PANORA बजार।"
             )}
           </p>
@@ -208,24 +209,27 @@ function Home() {
                   </ul>
                 </div>
 
-                <div className="mt-8 pt-5 border-t border-border flex items-center justify-between gap-3">
+                <div className="mt-8 pt-5 border-t border-border flex flex-wrap items-center justify-between gap-3">
                   <Link
                     to="/products/business-app"
                     className="text-xs font-bold text-navy hover:text-brand transition-colors"
                   >
                     {tr(lang, "Detailed Specs →", "विस्तृत विवरण →")}
                   </Link>
-                  <Link
-                    to="/merchant-registration"
-                    className="rounded-full bg-brand-gradient px-4 py-2 text-xs font-bold text-white shadow-brand hover:opacity-95"
-                  >
-                    {tr(lang, "Pre-book Beta", "बेटा प्रि-बुक गर्नुहोस्")}
-                  </Link>
+                  <div className="flex items-center gap-2">
+                    <PlayStoreButton size="xs" />
+                    <Link
+                      to="/merchant-registration"
+                      className="rounded-full bg-brand-gradient px-4 py-2 text-xs font-bold text-white shadow-brand hover:opacity-95"
+                    >
+                      {tr(lang, "Pre-book Beta", "बेटा प्रि-बुक गर्नुहोस्")}
+                    </Link>
+                  </div>
                 </div>
               </div>
             </Reveal>
 
-            {/* Product 2: MoveX Parcel App */}
+            {/* Product 2: PANORA Rider App */}
             <Reveal delay={160} className="h-full">
               <div className="flex flex-col h-full rounded-[2rem] border border-border bg-white p-7 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-brand">
                 <div className="flex items-center justify-between gap-2">
@@ -258,19 +262,22 @@ function Home() {
                   </ul>
                 </div>
 
-                <div className="mt-8 pt-5 border-t border-border flex items-center justify-between gap-3">
+                <div className="mt-8 pt-5 border-t border-border flex flex-wrap items-center justify-between gap-3">
                   <Link
                     to="/products/movex"
                     className="text-xs font-bold text-navy hover:text-brand transition-colors"
                   >
                     {tr(lang, "Detailed Specs →", "विस्तृत विवरण →")}
                   </Link>
-                  <Link
-                    to="/rider-registration"
-                    className="rounded-full border border-emerald-600 text-emerald-600 px-4 py-2 text-xs font-bold hover:bg-emerald-50"
-                  >
-                    {tr(lang, "Join as Rider", "राइडर बन्नुहोस्")}
-                  </Link>
+                  <div className="flex items-center gap-2">
+                    <PlayStoreButton app="rider" size="xs" />
+                    <Link
+                      to="/rider-registration"
+                      className="rounded-full border border-emerald-600 text-emerald-600 px-4 py-2 text-xs font-bold hover:bg-emerald-50"
+                    >
+                      {tr(lang, "Join Rider Network", "राइडर नेटवर्कमा जोडिनुहोस्")}
+                    </Link>
+                  </div>
                 </div>
               </div>
             </Reveal>
@@ -308,19 +315,22 @@ function Home() {
                   </ul>
                 </div>
 
-                <div className="mt-8 pt-5 border-t border-border flex items-center justify-between gap-3">
+                <div className="mt-8 pt-5 border-t border-border flex flex-wrap items-center justify-between gap-3">
                   <Link
                     to="/products/marketplace"
                     className="text-xs font-bold text-navy hover:text-brand transition-colors"
                   >
                     {tr(lang, "Detailed Specs →", "विस्तृत विवरण →")}
                   </Link>
-                  <Link
-                    to="/contact"
-                    className="rounded-full border border-purple-600 text-purple-600 px-4 py-2 text-xs font-bold hover:bg-purple-50"
-                  >
-                    {tr(lang, "Supplier Listing", "आपूर्तिकर्ता सूचीकरण")}
-                  </Link>
+                  <div className="flex items-center gap-2">
+                    <PlayStoreButton size="xs" />
+                    <Link
+                      to="/contact"
+                      className="rounded-full border border-purple-600 text-purple-600 px-4 py-2 text-xs font-bold hover:bg-purple-50"
+                    >
+                      {tr(lang, "Supplier Listing", "आपूर्तिकर्ता सूचीकरण")}
+                    </Link>
+                  </div>
                 </div>
               </div>
             </Reveal>

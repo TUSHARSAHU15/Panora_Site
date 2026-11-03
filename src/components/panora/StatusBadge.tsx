@@ -29,9 +29,9 @@ export function StatusBadge({
       hint: "Ready for live use and onboarding",
     },
     "In Development": {
-      en: "In Development",
-      ne: "विकासमा",
-      hint: "Currently in active engineering and pilot testing",
+      en: "Live",
+      ne: "लाइभ",
+      hint: "Currently live and operational",
     },
     Planned: {
       en: "Planned",
@@ -48,10 +48,10 @@ export function StatusBadge({
       dot: "bg-emerald-500",
     },
     "In Development": {
-      bg: "bg-amber-50",
-      text: "text-amber-800 font-bold",
-      border: "border-amber-300 shadow-xs",
-      dot: "bg-amber-500",
+      bg: "bg-emerald-50",
+      text: "text-emerald-700 font-bold",
+      border: "border-emerald-300 shadow-xs",
+      dot: "bg-emerald-500",
     },
     Planned: {
       bg: "bg-purple-50",
@@ -69,10 +69,10 @@ export function StatusBadge({
       dot: "bg-emerald-400",
     },
     "In Development": {
-      bg: "bg-amber-400/25 backdrop-blur-sm",
-      text: "text-amber-300 font-extrabold",
-      border: "border-amber-400/70 shadow-[0_0_14px_rgba(251,191,36,0.45)]",
-      dot: "bg-amber-400 shadow-[0_0_8px_#f59e0b]",
+      bg: "bg-emerald-400/20 backdrop-blur-sm",
+      text: "text-emerald-300 font-extrabold",
+      border: "border-emerald-400/60 shadow-[0_0_14px_rgba(52,211,153,0.45)]",
+      dot: "bg-emerald-400 shadow-[0_0_8px_#10b981]",
     },
     Planned: {
       bg: "bg-purple-400/20 backdrop-blur-sm",
@@ -93,7 +93,7 @@ export function StatusBadge({
   const style = styles[status];
   const label = labels[status];
   const highlightClass = highlighted
-    ? "ring-1 ring-amber-400/70 shadow-[0_0_16px_rgba(251,191,36,0.5)] font-black"
+    ? "ring-1 ring-emerald-400/70 shadow-[0_0_16px_rgba(52,211,153,0.5)] font-black"
     : "";
 
   return (

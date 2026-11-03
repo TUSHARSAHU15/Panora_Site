@@ -7,7 +7,7 @@ export const Route = createFileRoute("/privacy-policy")({
       { title: "Privacy Policy — PANORA Pvt. Ltd." },
       { name: "description", content: "How PANORA Pvt. Ltd. collects, manages, and protects business and personal data across our digital ecosystem." },
       { property: "og:title", content: "Privacy Policy — PANORA Pvt. Ltd." },
-      { property: "og:description", content: "Data protection standards for PANORA Business App, MoveX Parcel App, and Marketplace." },
+      { property: "og:description", content: "Data protection standards for PANORA Business App, Rider App, and Marketplace." },
       { property: "og:url", content: "/privacy-policy" },
     ],
     links: [{ rel: "canonical", href: "/privacy-policy" }],
@@ -20,7 +20,7 @@ const sections: LegalSection[] = [
     id: "entity-scope",
     title: "1. Corporate Entity & Scope",
     body: [
-      "This Privacy Policy is issued by PANORA Pvt. Ltd. ('PANORA', 'we', 'our', or 'us'), a private limited company registered in Nepal. It governs the collection, processing, and protection of information across all our digital touchpoints, including the PANORA corporate website, the PANORA Business App, the PANORA MoveX Parcel App, and the PANORA Marketplace.",
+      "This Privacy Policy is issued by PANORA Pvt. Ltd. ('PANORA', 'we', 'our', or 'us'), a private limited company registered in Nepal. It governs the collection, processing, and protection of information across all our digital touchpoints, including the PANORA corporate website, the PANORA Business App, the PANORA Rider App, and the PANORA Marketplace.",
       "This policy applies to all registered merchants, retailers, distributors, logistics riders, commercial partners, and website visitors.",
     ],
   },
@@ -30,7 +30,7 @@ const sections: LegalSection[] = [
     body: [
       "Business Profile & Identification: Business name, owner/manager name, PAN/VAT registration numbers, physical shop location, contact phone numbers, and email addresses.",
       "Operational & Transactional Data: Order details, inventory catalogues, invoice quantities, and digital udhaaro (credit) records entered by merchants into the PANORA Business App.",
-      "Logistics & Location Information: For PANORA MoveX, we collect parcel pickup/drop addresses, recipient contact details, vehicle registration details for riders, and real-time GPS location during active delivery runs.",
+      "Logistics & Location Information: For PANORA Rider, we collect parcel pickup/drop addresses, recipient contact details, vehicle registration details for riders, and real-time GPS location during active delivery runs.",
       "Financial Settlement Data: Bank account details and mobile wallet identifiers strictly for processing Cash-on-Delivery (COD) remittances and verified merchant payouts.",
     ],
   },

@@ -3,6 +3,7 @@ import { ArrowRight, CheckCircle2, Clock, Smartphone, Package, ShoppingBag, Spar
 import { PageHero } from "@/components/panora/PageHero";
 import { Reveal } from "@/components/panora/Reveal";
 import { StatusBadge } from "@/components/panora/StatusBadge";
+import { PlayStoreButton } from "@/components/panora/PlayStoreButton";
 import { videos } from "@/config/videos";
 import { productsDetail } from "@/config/site";
 import { useLanguage, tr } from "@/lib/i18n";
@@ -14,7 +15,7 @@ export const Route = createFileRoute("/products/")({
       {
         name: "description",
         content:
-          "Discover PANORA's 3 core products: PANORA Business App, PANORA MoveX Parcel App, and PANORA Marketplace. Learn about features, target users, and current development status.",
+          "Discover PANORA's 3 core products: PANORA Business App, PANORA Rider App, and PANORA Marketplace. Learn about features, target users, and current development status.",
       },
       { property: "og:title", content: "Our Products — PANORA Pvt. Ltd." },
       {
@@ -55,8 +56,8 @@ function ProductsIndex() {
               <strong>{tr(lang, "Product Lifecycle Transparency:", "उत्पादन जीवनचक्र पारदर्शिता:")}</strong>{" "}
               {tr(
                 lang,
-                "We distinguish between features that are Available for onboarding, In Development (internal/pilot phase), and Planned for future milestones.",
-                "हामी दर्ताका लागि उपलब्ध, सक्रिय विकास र परीक्षणमा रहेका, र आगामी योजनामा रहेका सुविधाहरूलाई स्पष्ट छुट्याउँछौं।"
+                "We distinguish between features that are Available for onboarding, Live, and Planned for future milestones.",
+                "हामी दर्ताका लागि उपलब्ध, लाइभ, र आगामी योजनामा रहेका सुविधाहरूलाई स्पष्ट छुट्याउँछौं।"
               )}
             </span>
           </div>
@@ -121,7 +122,8 @@ function ProductsIndex() {
                 </span>
               </div>
 
-              <div className="pt-4 flex flex-wrap gap-3">
+              <div className="pt-4 flex flex-wrap items-center gap-3">
+                <PlayStoreButton size="sm" />
                 <Link
                   to="/products/business-app"
                   className="rounded-full bg-brand-gradient px-6 py-3 text-xs font-bold text-white shadow-brand hover:opacity-95"
@@ -174,7 +176,7 @@ function ProductsIndex() {
           </div>
         </Reveal>
 
-        {/* Product 2: MoveX Parcel App */}
+        {/* Product 2: PANORA Rider App */}
         <Reveal>
           <div className="rounded-[2.5rem] border border-border bg-white p-8 sm:p-12 shadow-soft grid gap-10 lg:grid-cols-12 items-stretch">
             <div className="lg:col-span-7 space-y-5">
@@ -214,12 +216,13 @@ function ProductsIndex() {
                 </div>
               </div>
 
-              <div className="pt-4 flex flex-wrap gap-3">
+              <div className="pt-4 flex flex-wrap items-center gap-3">
+                <PlayStoreButton app="rider" size="sm" />
                 <Link
                   to="/products/movex"
                   className="rounded-full bg-emerald-600 px-6 py-3 text-xs font-bold text-white shadow-brand hover:opacity-95"
                 >
-                  {tr(lang, "View MoveX Details →", "MoveX विस्तृत विवरण →")}
+                  {tr(lang, "View Rider App Details →", "Rider App विस्तृत विवरण →")}
                 </Link>
                 <Link
                   to="/rider-registration"
@@ -234,7 +237,7 @@ function ProductsIndex() {
               <div className="relative h-44 sm:h-52 w-full rounded-xl overflow-hidden border border-border/80 shadow-sm group">
                 <img
                   src="/images/rider-dispatch.jpg"
-                  alt="PANORA MoveX On-Demand Courier Parcel Dispatch"
+                  alt="PANORA Rider On-Demand Courier Parcel Dispatch"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
                 />
@@ -307,7 +310,8 @@ function ProductsIndex() {
                 </div>
               </div>
 
-              <div className="pt-4 flex flex-wrap gap-3">
+              <div className="pt-4 flex flex-wrap items-center gap-3">
+                <PlayStoreButton size="sm" />
                 <Link
                   to="/products/marketplace"
                   className="rounded-full bg-purple-600 px-6 py-3 text-xs font-bold text-white shadow-brand hover:opacity-95"

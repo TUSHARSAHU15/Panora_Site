@@ -30,7 +30,7 @@ function GetStarted() {
   const options = [
     {
       title: tr(lang, "Merchant & Retailer", "व्यापारी तथा खुद्रा बिक्रेता"),
-      badge: "In Development",
+      badge: "Live",
       badgeStatus: "In Development" as const,
       icon: Store,
       blurb: tr(
@@ -58,7 +58,7 @@ function GetStarted() {
     },
     {
       title: tr(lang, "Wholesaler / Distributor", "थोक बिक्रेता / वितरक"),
-      badge: "In Development",
+      badge: "Live",
       badgeStatus: "In Development" as const,
       icon: Warehouse,
       blurb: tr(

@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { ChevronDown, Menu, X, Sparkles, Building2, Smartphone, Package, ShoppingBag, Users, HelpCircle } from "lucide-react";
 import { Logo } from "./Logo";
 import { StatusBadge } from "./StatusBadge";
+import { PlayStoreButton } from "./PlayStoreButton";
 import { mainNav, productsNav, solutionsNav } from "@/config/site";
 import { useLanguage, tr } from "@/lib/i18n";
 
@@ -261,6 +262,9 @@ export function Header() {
           >
             {tr(lang, "Pre-book Business App", "एप प्रि-बुक गर्नुहोस्")}
           </Link>
+
+          {/* Google Play CTA */}
+          <PlayStoreButton size="xs" />
         </div>
 
         {/* Mobile menu trigger */}
@@ -364,12 +368,14 @@ export function Header() {
             >
               {tr(lang, "Pre-book PANORA Business App", "Business App प्रि-बुक गर्नुहोस्")}
             </Link>
+            <PlayStoreButton size="md" className="w-full py-3" />
             <Link
               to="/rider-registration"
               className="w-full text-center rounded-xl border border-white/30 py-3 text-sm font-bold text-white hover:bg-white/10"
             >
-              {tr(lang, "Join as MoveX Rider Partner", "MoveX राइडर साझेदार बन्नुहोस्")}
+              {tr(lang, "Join as PANORA Rider Partner", "PANORA Rider साझेदार बन्नुहोस्")}
             </Link>
+            <PlayStoreButton app="rider" size="md" theme="emerald" className="w-full py-3" />
             <Link
               to="/login"
               className="w-full text-center py-2 text-xs font-semibold text-white/60 hover:text-white"

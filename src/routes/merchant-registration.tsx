@@ -5,6 +5,7 @@ import { Store, CheckCircle2, ShieldCheck, Sparkles, Building2, Smartphone, Arro
 import { PageHero } from "@/components/panora/PageHero";
 import { Reveal } from "@/components/panora/Reveal";
 import { StatusBadge } from "@/components/panora/StatusBadge";
+import { PlayStoreButton } from "@/components/panora/PlayStoreButton";
 import { videos } from "@/config/videos";
 import { useLanguage, tr } from "@/lib/i18n";
 
@@ -156,6 +157,11 @@ function MerchantRegistrationPage() {
                     "तपाईंको हिसाबकिताब, ग्राहक रेकर्ड र अर्डरहरू तपाईंको व्यवसायका लागि मात्र पूर्ण रूपमा गोप्य रहन्छन्।"
                   )}
                 </div>
+
+                <div className="pt-2 flex items-center justify-between gap-3 border-t border-border">
+                  <span className="text-xs font-semibold text-navy">{tr(lang, "Get App Now:", "एप डाउनलोड गर्नुहोस्:")}</span>
+                  <PlayStoreButton size="sm" />
+                </div>
               </div>
             </Reveal>
           </div>
@@ -179,7 +185,10 @@ function MerchantRegistrationPage() {
                         "तपाईंको दर्ता हाम्रो संस्थापक व्यापारी सूचीमा दर्ता भएको छ। PANORA प्रतिनिधिले तपाईंको बेटा सेटअपका लागि फोन/ह्वाट्सएप मार्फत सम्पर्क गर्नेछन्।"
                       )}
                     </p>
-                    <div className="pt-6 flex justify-center gap-4">
+                    <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3">
+                      <PlayStoreButton size="md" />
+                    </div>
+                    <div className="pt-3 flex justify-center gap-4">
                       <button
                         onClick={() => setSubmitted(false)}
                         className="rounded-full border border-border px-6 py-2.5 text-xs font-bold text-navy hover:border-brand"
