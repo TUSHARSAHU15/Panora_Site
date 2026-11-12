@@ -9,7 +9,7 @@ export const Route = createFileRoute("/solutions/distributors")({
       {
         name: "description",
         content:
-          "Showcase your wholesale brand catalogue, streamline order fulfillment, manage merchant credit limits, and coordinate MoveX dispatch across Nepal.",
+          "Showcase your wholesale brand catalogue, streamline order fulfillment, manage merchant credit limits, and coordinate Rider App dispatch across Nepal.",
       },
       { property: "og:title", content: "PANORA for Distributors — Connect. Manage. Trade." },
       { property: "og:description", content: "Wholesale catalogue management, order queues, and warehouse dispatch for distributors in Nepal." },
@@ -36,14 +36,14 @@ export const Route = createFileRoute("/solutions/distributors")({
           heading: "A wider merchant reach, a calmer warehouse operation",
           body: [
             "PANORA Marketplace features your verified brand catalogue in front of verified retail shopkeepers across Nepal, directing their reorders into a single, structured digital queue instead of disorganized phone calls and scattered paper slips.",
-            "From acceptance to packing and MoveX dispatch handoff, your sales, inventory, and logistics teams operate from one synchronized source of truth.",
+            "From acceptance to packing and Rider App dispatch handoff, your sales, inventory, and logistics teams operate from one synchronized source of truth.",
           ],
         },
         ne: {
           heading: "फराकिलो बजार पहुँच र व्यवस्थित गोदाम सञ्चालन",
           body: [
             "PANORA ले तपाईंको आधिकारिक क्याटलग नेपालभरका प्रमाणित खुद्रा पसलहरूको अगाडि प्रस्तुत गर्दछ, र छरिएका फोन कलको सट्टा सम्पूर्ण अर्डरहरू एउटै व्यवस्थित डिजिटल लाइनमा ल्याउँछ।",
-            "अर्डर स्वीकृति, प्याकिङ र MoveX ढुवानी हस्तान्तरणसम्म तपाईंको बिक्री, गोदाम र हिसाब टोली एउटै भरपर्दो प्रणालीबाट सञ्चालन हुन्छन्।",
+            "अर्डर स्वीकृति, प्याकिङ र Rider App ढुवानी हस्तान्तरणसम्म तपाईंको बिक्री, गोदाम र हिसाब टोली एउटै भरपर्दो प्रणालीबाट सञ्चालन हुन्छन्।",
           ],
         },
       }}
@@ -53,7 +53,7 @@ export const Route = createFileRoute("/solutions/distributors")({
           { title: "Clean Order Queues", body: "No missed items or illegible handwritten chits — orders arrive with exact SKU quantities." },
           { title: "Credit & Ledger Controls", body: "Set merchant credit limits and track payment commitments with complete mutual clarity." },
           { title: "Warehouse Picking Lists", body: "Generate optimized item lists so warehouse staff pack cartons faster with fewer errors." },
-          { title: "Integrated MoveX Dispatch", body: "Assign shipments directly to verified MoveX parcel riders or your own dedicated fleet." },
+          { title: "Integrated Rider App Dispatch", body: "Assign shipments directly to verified Rider App partners or your own dedicated fleet." },
           { title: "Analytics & Sell-Through", body: "Analyze which retail areas and product categories are generating the highest volume." },
         ],
         ne: [
@@ -61,7 +61,7 @@ export const Route = createFileRoute("/solutions/distributors")({
           { title: "स्पष्ट डिजिटल अर्डर", body: "कागजमा नबुझिने हस्तलेखनको अन्त्य — अर्डरहरू स्पष्ट परिमाणसहित आउँछन्।" },
           { title: "उधारो र खाता नियन्त्रण", body: "व्यापारी अनुसार उधारो सीमा तोक्नुहोस् र हिसाबकिताब पारदर्शी राख्नुहोस्।" },
           { title: "गोदाम प्याकिङ सूची", body: "गोदामका कर्मचारीहरूले छिटो र गल्ती बिना सामान प्याक गर्न सक्ने सूची।" },
-          { title: "MoveX ढुवानी समन्वय", body: "पार्सल संकलनका लागि MoveX राइडर वा आफ्नै गाडीलाई तत्काल खटाउनुहोस्।" },
+          { title: "Rider App ढुवानी समन्वय", body: "पार्सल संकलनका लागि Rider App राइडर वा आफ्नै गाडीलाई तत्काल खटाउनुहोस्।" },
           { title: "बिक्री तथा माग विश्लेषण", body: "कुन क्षेत्रमा कुन सामान बढी बिक्री भइरहेको छ प्रत्यक्ष हेर्नुहोस्।" },
         ],
       }}

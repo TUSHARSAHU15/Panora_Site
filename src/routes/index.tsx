@@ -104,7 +104,7 @@ function Home() {
             {tr(
               lang,
               "Instead of separate uncoordinated tools, we are developing three unified product pillars designed to work in synergy: the PANORA Business App, PANORA Rider App, and PANORA Marketplace.",
-              "अलग-अलग र छरिएका सफ्टवेयरको सट्टा, हामी एकआपसमा जोडिएर काम गर्ने तीनवटा मुख्य उत्पादनहरू विकास गर्दैछौं: Business App, MoveX पार्सल एप, र PANORA बजार।"
+              "अलग-अलग र छरिएका सफ्टवेयरको सट्टा, हामी एकआपसमा जोडिएर काम गर्ने तीनवटा मुख्य उत्पादनहरू विकास गर्दैछौं: Business App, Rider App, र PANORA बजार।"
             )}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
@@ -129,7 +129,7 @@ function Home() {
             <div className="aspect-[3/2] overflow-hidden bg-slate-950/20">
               <img
                 src="/images/corporate-ecosystem.jpg"
-                alt="PANORA Connected Digital Business Ecosystem — Local Shops, Wholesalers, MoveX Riders, Consumers"
+                alt="PANORA Connected Digital Business Ecosystem — Local Shops, Wholesalers, Rider App Riders, Consumers"
                 className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 loading="lazy"
               />
@@ -525,8 +525,8 @@ function Home() {
                 <p className="mt-2 text-xs text-white/70 leading-relaxed flex-1">
                   {tr(
                     lang,
-                    "Calling riders repeatedly to check parcel locations wastes hours. MoveX introduces status checkpoints and OTP handovers.",
-                    "सामान कहाँ पुग्यो भनी पटक-पटक फोन गर्नुपर्ने झन्झट अन्त्य गर्न MoveX लाइभ ट्र्याकिङ र सुरक्षित OTP।"
+                    "Calling riders repeatedly to check parcel locations wastes hours. Rider App introduces status checkpoints and OTP handovers.",
+                    "सामान कहाँ पुग्यो भनी पटक-पटक फोन गर्नुपर्ने झन्झट अन्त्य गर्न Rider App लाइभ ट्र्याकिङ र सुरक्षित OTP।"
                   )}
                 </p>
               </div>
@@ -557,7 +557,7 @@ function Home() {
                 <p className="mt-2 text-xs text-white/70 leading-relaxed flex-1">
                   {tr(
                     lang,
-                    "Merchants often wait weeks for courier COD payouts. MoveX guarantees scheduled, transparent digital settlement.",
+                    "Merchants often wait weeks for courier COD payouts. Rider App guarantees scheduled, transparent digital settlement.",
                     "कुरियरले नगद भुक्तानी हप्तौंसम्म रोक्ने समस्या समाधान गर्न डिजिटल हिसाब र निश्चित समयमा बैंक भुक्तानी।"
                   )}
                 </p>
@@ -634,8 +634,8 @@ function Home() {
             <p className="mt-4 text-base sm:text-lg text-white/80 leading-relaxed">
               {tr(
                 lang,
-                "Pre-book the PANORA Business App for early beta access, or register as an early delivery rider with MoveX. We are onboarding founding partners across Nepal.",
-                "बेटा संस्करणमा प्राथमिकता पाउन Business App प्रि-बुक गर्नुहोस्, वा MoveX सँग अग्रगामी राइडरका रूपमा दर्ता हुनुहोस्। हामी नेपालभर संस्थापक साझेदारहरू जोड्दैछौं।"
+                "Pre-book the PANORA Business App for early beta access, or register as an early delivery rider with Rider App. We are onboarding founding partners across Nepal.",
+                "बेटा संस्करणमा प्राथमिकता पाउन Business App प्रि-बुक गर्नुहोस्, वा Rider App सँग अग्रगामी राइडरका रूपमा दर्ता हुनुहोस्। हामी नेपालभर संस्थापक साझेदारहरू जोड्दैछौं।"
               )}
             </p>
 

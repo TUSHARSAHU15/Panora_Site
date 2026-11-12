@@ -13,7 +13,7 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Connect with the PANORA Pvt. Ltd. corporate team in Saptari, Madhesh Province, Nepal for business pre-booking, MoveX rider fleet inquiries, and institutional partnerships.",
+          "Connect with the PANORA Pvt. Ltd. corporate team in Saptari, Madhesh Province, Nepal for business pre-booking, Rider App fleet inquiries, and institutional partnerships.",
       },
       { property: "og:title", content: "Contact PANORA Pvt. Ltd. — Connect. Manage. Trade." },
       {

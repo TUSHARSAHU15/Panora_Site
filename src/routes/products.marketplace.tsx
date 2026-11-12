@@ -235,8 +235,8 @@ function MarketplacePage() {
             <p className="mt-3 text-xs sm:text-sm text-white/80 leading-relaxed">
               {tr(
                 lang,
-                "Showcase your official catalogue to thousands of pre-vetted retail merchants across Nepal with transparent pricing and integrated MoveX logistics.",
-                "नेपालभरका हजारौं प्रमाणित खुद्रा व्यापारीहरूलाई आफ्नो आधिकारिक क्याटलग देखाउनुहोस्, पारदर्शी मूल्य र MoveX ढुवानी सुविधाका साथ।"
+                "Showcase your official catalogue to thousands of pre-vetted retail merchants across Nepal with transparent pricing and integrated Rider App logistics.",
+                "नेपालभरका हजारौं प्रमाणित खुद्रा व्यापारीहरूलाई आफ्नो आधिकारिक क्याटलग देखाउनुहोस्, पारदर्शी मूल्य र Rider App ढुवानी सुविधाका साथ।"
               )}
             </p>
           </div>

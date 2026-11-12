@@ -106,7 +106,7 @@ function RiderRegistrationPage() {
                 </div>
 
                 <h2 className="text-xl font-extrabold text-navy">
-                  {tr(lang, "Why Ride With MoveX?", "MoveX सँग किन जोडिने?")}
+                  {tr(lang, "Why Join PANORA Rider App?", "Rider App सँग किन जोडिने?")}
                 </h2>
 
                 <ul className="space-y-4 text-xs text-navy font-medium">

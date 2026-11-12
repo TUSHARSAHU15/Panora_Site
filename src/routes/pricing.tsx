@@ -14,7 +14,7 @@ export const Route = createFileRoute("/pricing")({
       {
         name: "description",
         content:
-          "Transparent pricing for PANORA Business App and MoveX Parcel services. 100% free pilot access for founding merchants during beta rollout.",
+          "Transparent pricing for PANORA Business App and Rider App Parcel services. 100% free pilot access for founding merchants during beta rollout.",
       },
       { property: "og:title", content: "Pricing & Plans — PANORA Pvt. Ltd." },
       {
@@ -157,7 +157,7 @@ function PricingPage() {
                 ),
               },
               {
-                q: tr(lang, "How are MoveX delivery rates calculated?", "MoveX पार्सल दर कसरी निर्धारण हुन्छ?"),
+                q: tr(lang, "How are Rider App delivery rates calculated?", "Rider App पार्सल दर कसरी निर्धारण हुन्छ?"),
                 a: tr(
                   lang,
                   "Parcel rates are calculated based on transparent weight/dimension brackets and pickup/drop distances. There are no surprise surge pricing markups for commercial business accounts.",

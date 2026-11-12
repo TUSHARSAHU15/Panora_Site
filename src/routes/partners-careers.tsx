@@ -15,6 +15,9 @@ import {
   PhoneCall,
   CheckCircle2,
   Sparkles,
+  Briefcase,
+  Coins,
+  Megaphone,
 } from "lucide-react";
 import { PageHero } from "@/components/panora/PageHero";
 import { Reveal } from "@/components/panora/Reveal";
@@ -51,8 +54,8 @@ const partnerTracks = [
       ne: "ढुवानी फ्लीट तथा कुरियर सञ्चालक",
     },
     desc: {
-      en: "Integrate regional courier fleets, express delivery hubs, and inter-city cargo lines with the MoveX parcel logistics engine. Gain high-density route volume and real-time dispatch technology.",
-      ne: "आफ्नो क्षेत्रीय कुरियर फ्लीट, डेलिभरी हब र अन्तर-जिल्ला कार्गो लाइनलाई MoveX पार्सल प्रणालीसँग जोड्नुहोस्। उच्च पार्सल भोल्युम र लाइभ डिस्प्याच प्रविधिको लाभ लिनुहोस्।",
+      en: "Integrate regional courier fleets, express delivery hubs, and inter-city cargo lines with the Rider App parcel logistics engine. Gain high-density route volume and real-time dispatch technology.",
+      ne: "आफ्नो क्षेत्रीय कुरियर फ्लीट, डेलिभरी हब र अन्तर-जिल्ला कार्गो लाइनलाई Rider App पार्सल प्रणालीसँग जोड्नुहोस्। उच्च पार्सल भोल्युम र लाइभ डिस्प्याच प्रविधिको लाभ लिनुहोस्।",
     },
     perks: {
       en: ["Direct rider task assignment", "Automated COD settlement", "Real-time GPS route telemetry"],
@@ -174,8 +177,8 @@ function PartnersPage() {
                   <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
                     {tr(
                       lang,
-                      "PANORA connects the 4 core pillars of Nepalese trade: Local Retail Shops, Wholesale Distributors, MoveX Delivery Riders, and End Customers into one synchronized commerce loop.",
-                      "PANORA ले नेपाली व्यापारका ४ मुख्य स्तम्भहरूलाई जोड्छ: खुद्रा पसल, थोक वितरक, MoveX राइडर, र उपभोक्ताहरूलाई एउटै डिजिटल चक्रमा।"
+                      "PANORA connects the 4 core pillars of Nepalese trade: Local Retail Shops, Wholesale Distributors, Rider App Delivery Riders, and End Customers into one synchronized commerce loop.",
+                      "PANORA ले नेपाली व्यापारका ४ मुख्य स्तम्भहरूलाई जोड्छ: खुद्रा पसल, थोक वितरक, Rider App राइडर, र उपभोक्ताहरूलाई एउटै डिजिटल चक्रमा।"
                     )}
                   </p>
 
@@ -189,7 +192,7 @@ function PartnersPage() {
                     <div className="rounded-xl border border-border bg-white p-3">
                       <p className="text-lg font-black text-emerald-600">3 Apps</p>
                       <p className="text-[11px] text-muted-foreground mt-0.5">
-                        {tr(lang, "Business App, MoveX & Marketplace", "Business App, MoveX र बजार")}
+                        {tr(lang, "Business App, Rider App & Marketplace", "Business App, Rider App र बजार")}
                       </p>
                     </div>
                   </div>
@@ -197,11 +200,11 @@ function PartnersPage() {
 
                 <div className="pt-2">
                   <a
-                    href="mailto:partners@panora.com.np?subject=PANORA Strategic Partnership Inquiry"
+                    href="mailto:info@panora.com.np?subject=PANORA Strategic Partnership Inquiry"
                     className="inline-flex items-center gap-2 rounded-full bg-brand-gradient px-6 py-3 text-xs font-bold text-white shadow-brand hover:opacity-95"
                   >
                     <Mail className="h-4 w-4" />
-                    <span>{tr(lang, "Apply via Email (partners@panora.com.np)", "इमेलबाट आवेदन दिनुहोस् (partners@panora.com.np)")}</span>
+                    <span>{tr(lang, "Apply via Email (info@panora.com.np)", "इमेलबाट आवेदन दिनुहोस् (info@panora.com.np)")}</span>
                   </a>
                 </div>
               </div>
@@ -231,7 +234,7 @@ function PartnersPage() {
         <div className="mt-12 grid gap-6 md:grid-cols-2 items-stretch">
           {partnerTracks.map((track, idx) => {
             const Icon = track.icon;
-            const mailtoUrl = `mailto:partners@panora.com.np?subject=${encodeURIComponent(
+            const mailtoUrl = `mailto:info@panora.com.np?subject=${encodeURIComponent(
               track.mailSubject
             )}&body=${encodeURIComponent(
               `Dear PANORA Alliances Team,\n\nWe are interested in partnering under the "${track.title.en}" track.\n\nOrganization Name:\nContact Person & Designation:\nPhone Number:\nOperating Locations / Coverage:\nBrief Proposal / Collaboration Summary:\n\nThank you.`
@@ -350,7 +353,7 @@ function PartnersPage() {
                 <span className="text-xs font-bold text-brand-cyan uppercase tracking-wider">
                   {tr(lang, "Corporate Alliances Mailbox", "संस्थागत साझेदारी इमेल")}
                 </span>
-                <p className="text-xl sm:text-2xl font-extrabold text-white">partners@panora.com.np</p>
+                <p className="text-xl sm:text-2xl font-extrabold text-white">info@panora.com.np</p>
                 <p className="text-xs text-white/70">
                   {tr(
                     lang,
@@ -362,7 +365,7 @@ function PartnersPage() {
 
               <div className="flex flex-wrap gap-3">
                 <a
-                  href="mailto:partners@panora.com.np?subject=PANORA%20Strategic%20Partnership%20Application&body=Organization%20Name:%0D%0AContact%20Person%20%26%20Designation:%0D%0APhone%20Number:%0D%0APartner%20Track:%0D%0AOperating%20Territory:%0D%0ABrief%20Proposal%20Summary:"
+                  href="mailto:info@panora.com.np?subject=PANORA%20Strategic%20Partnership%20Application&body=Organization%20Name:%0D%0AContact%20Person%20%26%20Designation:%0D%0APhone%20Number:%0D%0APartner%20Track:%0D%0AOperating%20Territory:%0D%0ABrief%20Proposal%20Summary:"
                   className="inline-flex items-center gap-2 rounded-full bg-white px-7 py-3.5 text-xs font-bold text-navy shadow-brand hover:bg-white/90 transition-all"
                 >
                   <Mail className="h-4 w-4" />
@@ -372,6 +375,66 @@ function PartnersPage() {
             </div>
           </Reveal>
         </div>
+      </section>
+
+      {/* Careers & Become a Marketing Partner & Earn */}
+      <section className="container-page py-20">
+        <Reveal>
+          <div className="rounded-[2rem] border border-border bg-white p-8 sm:p-12 shadow-soft grid gap-8 lg:grid-cols-2 items-center">
+            <div className="space-y-4">
+              <div className="inline-flex items-center gap-2 rounded-full bg-brand/10 px-3.5 py-1 text-xs font-bold text-brand uppercase tracking-wider">
+                <Briefcase className="h-3.5 w-3.5" />
+                <span>{tr(lang, "Careers & Earning Opportunities", "करियर र आम्दानीको अवसर")}</span>
+              </div>
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-navy">
+                {tr(lang, "Explore Careers at PANORA Pvt. Ltd.", "PANORA Pvt. Ltd. मा करियर अवसरहरू")}
+              </h2>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                {tr(
+                  lang,
+                  "Looking to join our core engineering, operations, and field growth team — or earn flexibly as an independent Marketing Partner across Nepal?",
+                  "हाम्रो मुख्य इन्जिनियरिङ, सञ्चालन र फिल्ड टोलीमा सामेल हुन वा नेपालभर स्वतन्त्र मार्केटिङ साझेदार बनेर आम्दानी गर्न चाहनुहुन्छ?"
+                )}
+              </p>
+              <div className="pt-2 flex flex-wrap gap-3">
+                <Link
+                  to="/careers"
+                  className="inline-flex items-center gap-2 rounded-full bg-brand-gradient px-6 py-3 text-xs font-bold text-white shadow-brand hover:opacity-95"
+                >
+                  <Briefcase className="h-4 w-4" />
+                  <span>{tr(lang, "View Open Career Roles", "खुला करियर पदहरू हेर्नुहोस्")}</span>
+                  <ArrowRight className="h-3.5 w-3.5" />
+                </Link>
+              </div>
+            </div>
+
+            <div className="rounded-2xl bg-night-gradient p-6 sm:p-8 text-white space-y-4">
+              <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-brand-cyan">
+                <Coins className="h-3.5 w-3.5" />
+                <span>{tr(lang, "Earn With Us", "हामीसँग कमाउनुहोस्")}</span>
+              </div>
+              <h3 className="text-xl sm:text-2xl font-extrabold text-white">
+                {tr(lang, "Become a Marketing Partner & Earn", "मार्केटिङ साझेदार बन्नुहोस् र कमाउनुहोस्")}
+              </h3>
+              <p className="text-xs sm:text-sm text-white/80 leading-relaxed">
+                {tr(
+                  lang,
+                  "Refer local retail stores, wholesalers, and Rider App delivery riders across Nepal and earn commissions on every verified onboarding — with zero upfront investment.",
+                  "स्थानीय पसल, थोक बिक्रेता र Rider App राइडरहरूलाई PANORA मा जोड्नुहोस् र प्रत्येक प्रमाणित दर्तामा कमिसन कमाउनुहोस्।"
+                )}
+              </p>
+              <Link
+                to="/careers"
+                hash="marketing-partner"
+                className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-xs font-bold text-navy shadow-brand hover:bg-white/90 transition-colors"
+              >
+                <Megaphone className="h-4 w-4 text-brand" />
+                <span>{tr(lang, "Join Marketing Partner Program", "मार्केटिङ साझेदार कार्यक्रममा जोडिनुहोस्")}</span>
+                <ArrowRight className="h-3.5 w-3.5" />
+              </Link>
+            </div>
+          </div>
+        </Reveal>
       </section>
     </>
   );

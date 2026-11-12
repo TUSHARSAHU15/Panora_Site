@@ -46,7 +46,7 @@ const sections: LegalSection[] = [
     id: "how-we-use",
     title: "4. Purpose of Data Processing",
     body: [
-      "To provision and maintain the PANORA Business App, MoveX parcel dispatching engine, and Marketplace directory.",
+      "To provision and maintain the PANORA Business App, Rider App parcel dispatching engine, and Marketplace directory.",
       "To verify rider credentials and execute secure OTP-verified deliveries.",
       "To facilitate accurate, automated Cash-on-Delivery (COD) settlements directly to merchant bank accounts.",
       "To communicate important service alerts, security notifications, and beta development updates.",

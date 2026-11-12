@@ -182,7 +182,7 @@ function MoveXPage() {
           <div className="lg:col-span-6 relative overflow-hidden rounded-2xl aspect-[3/2] w-full bg-slate-50 border border-border/80 shadow-sm group">
             <img
               src="/images/movex-parcel.jpg"
-              alt={tr(lang, "MoveX parcel dispatch and doorstep delivery network across Nepal", "नेपालभर MoveX पार्सल डिस्प्याच र घरदैलो डेलिभरी सञ्जाल")}
+              alt={tr(lang, "Rider App parcel dispatch and doorstep delivery network across Nepal", "नेपालभर Rider App पार्सल डिस्प्याच र घरदैलो डेलिभरी सञ्जाल")}
               className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
             />
@@ -201,8 +201,8 @@ function MoveXPage() {
             <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
               {tr(
                 lang,
-                "MoveX pairs scheduled courier routes with instant point-to-point dispatch. Shopkeepers dispatch B2C customer orders and receive B2B wholesale cartons with exact arrival countdowns and digital proof of delivery.",
-                "MoveX ले नियमित कुरियर रूट र तत्काल डेलिभरीलाई जोड्छ। पसलेले ग्राहकका B2C अर्डर घरमै पठाउन सक्छन् र B2B थोक सामान ढुवानीलाई प्रत्यक्ष ट्र्याक गर्न सक्छन्।"
+                "Rider App pairs scheduled courier routes with instant point-to-point dispatch. Shopkeepers dispatch B2C customer orders and receive B2B wholesale cartons with exact arrival countdowns and digital proof of delivery.",
+                "Rider App ले नियमित कुरियर रूट र तत्काल डेलिभरीलाई जोड्छ। पसलेले ग्राहकका B2C अर्डर घरमै पठाउन सक्छन् र B2B थोक सामान ढुवानीलाई प्रत्यक्ष ट्र्याक गर्न सक्छन्।"
               )}
             </p>
             <div className="pt-2 flex flex-wrap gap-4">
@@ -217,14 +217,14 @@ function MoveXPage() {
         </div>
       </section>
 
-      {/* How MoveX Works for Riders & Merchants */}
+      {/* How Rider App Works for Riders & Merchants */}
       <section className="container-page py-24">
         <Reveal className="text-center max-w-2xl mx-auto mb-14">
           <span className="text-xs font-bold uppercase tracking-[0.2em] text-emerald-600">
             {tr(lang, "Operational Workflow", "कार्यप्रणाली")}
           </span>
           <h2 className="mt-3 text-3xl font-extrabold sm:text-4xl text-navy">
-            {tr(lang, "The MoveX Parcel Flow", "MoveX पार्सल प्रवाह")}
+            {tr(lang, "The Rider App Parcel Flow", "Rider App पार्सल प्रवाह")}
           </h2>
         </Reveal>
 
@@ -254,7 +254,7 @@ function MoveXPage() {
               {tr(lang, "For Delivery Riders & Courier Fleets", "डेलिभरी राइडर र कुरियरहरूका लागि")}
             </span>
             <h2 className="mt-2 text-2xl sm:text-3xl font-extrabold text-white">
-              {tr(lang, "Earn Dependable Income With MoveX", "MoveX सँग भरपर्दो आम्दानी गर्नुहोस्")}
+              {tr(lang, "Earn Dependable Income With Rider App", "Rider App सँग भरपर्दो आम्दानी गर्नुहोस्")}
             </h2>
             <p className="mt-3 text-xs sm:text-sm text-white/80 leading-relaxed">
               {tr(

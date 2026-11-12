@@ -51,8 +51,8 @@ function Login() {
           <p className="mt-2 text-xs text-muted-foreground leading-relaxed">
             {tr(
               lang,
-              "Single sign-on portal for PANORA Business App merchants, MoveX delivery partners, and verified distributors.",
-              "PANORA Business App व्यापारी, MoveX राइडर, र प्रमाणित वितरकहरूका लागि एकीकृत लगइन पोर्टल।"
+              "Single sign-on portal for PANORA Business App merchants, Rider App delivery partners, and verified distributors.",
+              "PANORA Business App व्यापारी, Rider App राइडर, र प्रमाणित वितरकहरूका लागि एकीकृत लगइन पोर्टल।"
             )}
           </p>
 
@@ -106,7 +106,7 @@ function Login() {
                 {tr(lang, "Pre-book Business App →", "Business App प्रि-बुक गर्नुहोस् →")}
               </Link>
               <Link to="/rider-registration" className="font-bold text-emerald-600 hover:underline">
-                {tr(lang, "Register as MoveX Rider →", "MoveX राइडर दर्ता गर्नुहोस् →")}
+                {tr(lang, "Register for Rider App →", "Rider App दर्ता गर्नुहोस् →")}
               </Link>
             </div>
           </div>

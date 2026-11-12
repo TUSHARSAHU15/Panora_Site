@@ -29,7 +29,7 @@ export const Route = createFileRoute("/how-it-works")({
       { property: "og:title", content: "How It Works — PANORA Pvt. Ltd." },
       {
         property: "og:description",
-        content: "From restock order to warehouse dispatch, MoveX delivery, and digital ledger settlement.",
+        content: "From restock order to warehouse dispatch, Rider App delivery, and digital ledger settlement.",
       },
       { property: "og:url", content: "/how-it-works" },
     ],
@@ -75,8 +75,8 @@ function HowItWorksPage() {
       title: tr(lang, "Rider Assignment & Secure Transit", "राइडर तोकिने र सुरक्षित ढुवानी"),
       desc: tr(
         lang,
-        "MoveX matches an optimized delivery partner to collect the parcels from the distributor warehouse. Live status milestones keep both sender and recipient updated.",
-        "MoveX ले गोदामबाट सामान संकलन गर्न नजिकको राइडर तोक्छ र लाइभ ट्र्याकिङ मार्फत सामान कहाँ पुग्यो देखाउँछ।"
+        "Rider App matches an optimized delivery partner to collect the parcels from the distributor warehouse. Live status milestones keep both sender and recipient updated.",
+        "Rider App ले गोदामबाट सामान संकलन गर्न नजिकको राइडर तोक्छ र लाइभ ट्र्याकिङ मार्फत सामान कहाँ पुग्यो देखाउँछ।"
       ),
       icon: Package,
       tone: "text-emerald-600 bg-emerald-500/10",
@@ -123,7 +123,7 @@ function HowItWorksPage() {
             {tr(
               lang,
               "Instead of dealing with three different phone calls and messy paper slips, PANORA synchronizes every stage between the PANORA Business App, Rider App, and PANORA Marketplace.",
-              "तीनवटा अलग-अलग फोन कल र हराउने कागजका बिलहरूको झन्झट अन्त्य गर्दै, PANORA ले Business App, MoveX, र Marketplace बीच हरेक चरण स्वतः मिलाउँछ।"
+              "तीनवटा अलग-अलग फोन कल र हराउने कागजका बिलहरूको झन्झट अन्त्य गर्दै, PANORA ले Business App, Rider App, र Marketplace बीच हरेक चरण स्वतः मिलाउँछ।"
             )}
           </p>
         </Reveal>
@@ -223,7 +223,7 @@ function HowItWorksPage() {
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="h-4 w-4 text-brand shrink-0" />
-                    <span>{tr(lang, "Track incoming wholesale cartons and dispatch B2C consumer home deliveries via MoveX.", "थोक सामानको ढुवानी र ग्राहकको घरमै डेलिभरी दुवै MoveX बाट गर्नुहोस्।")}</span>
+                    <span>{tr(lang, "Track incoming wholesale cartons and dispatch B2C consumer home deliveries via Rider App.", "थोक सामानको ढुवानी र ग्राहकको घरमै डेलिभरी दुवै Rider App बाट गर्नुहोस्।")}</span>
                   </li>
                 </ul>
               </div>
@@ -247,7 +247,7 @@ function HowItWorksPage() {
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="h-4 w-4 text-emerald-600 shrink-0" />
-                    <span>{tr(lang, "MoveX riders automatically dispatched upon packing completion.", "सामान प्याक हुनासाथ MoveX राइडर स्वतः तोकिन्छ।")}</span>
+                    <span>{tr(lang, "Rider App partners automatically dispatched upon packing completion.", "सामान प्याक हुनासाथ Rider App राइडर स्वतः तोकिन्छ।")}</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="h-4 w-4 text-emerald-600 shrink-0" />
@@ -277,7 +277,7 @@ function HowItWorksPage() {
               to="/rider-registration"
               className="rounded-full border border-border px-7 py-3.5 text-xs font-bold text-navy hover:border-brand"
             >
-              {tr(lang, "Join as MoveX Rider", "MoveX राइडर बन्नुहोस्")}
+              {tr(lang, "Join Rider App", "Rider App मा जोडिनुहोस्")}
             </Link>
           </div>
         </Reveal>

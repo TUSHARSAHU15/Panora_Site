@@ -23,7 +23,7 @@ export function Footer() {
       links: [
         { label: tr(lang, "About PANORA Pvt. Ltd.", "PANORA Pvt. Ltd. बारे"), to: "/about" },
         { label: tr(lang, "Vision, Mission & Purpose", "दृष्टिकोण, लक्ष्य र उद्देश्य"), to: "/vision-mission" },
-        { label: tr(lang, "How It Works", "प्रणाली कसरी काम गर्छ"), to: "/how-it-works" },
+        { label: tr(lang, "Careers at PANORA", "PANORA मा करियर"), to: "/careers" },
         { label: tr(lang, "Strategic Partners", "रणनीतिक साझेदारहरू"), to: "/partners-careers" },
       ],
     },
@@ -41,6 +41,7 @@ export function Footer() {
       links: [
         { label: tr(lang, "Merchant Pre-booking", "व्यापारी प्रि-बुकिङ"), to: "/merchant-registration" },
         { label: tr(lang, "Rider Partner Registration", "राइडर साझेदार दर्ता"), to: "/rider-registration" },
+        { label: tr(lang, "Become a Marketing Partner", "मार्केटिङ साझेदार बन्नुहोस्"), to: "/careers" },
         { label: tr(lang, "FAQ & Help Center", "प्रश्नोत्तर तथा सहयोग"), to: "/faq" },
         { label: tr(lang, "Contact & Support", "सम्पर्क तथा सहायता"), to: "/contact" },
       ],

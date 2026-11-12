@@ -11,7 +11,7 @@ import { useLanguage, tr } from "@/lib/i18n";
 export const Route = createFileRoute("/products/")({
   head: () => ({
     meta: [
-      { title: "Our Products — PANORA Business App, MoveX & Marketplace" },
+      { title: "Our Products — PANORA Business App, Rider App & Marketplace" },
       {
         name: "description",
         content:
@@ -378,8 +378,8 @@ function ProductsIndex() {
             <p className="mt-3 text-sm text-white/75 leading-relaxed">
               {tr(
                 lang,
-                "A retailer rings up B2C consumer counter sales with instant QR billing → tracks inventory & restocks from B2B suppliers on Marketplace → MoveX delivers the parcel with OTP verification → dues reconcile seamlessly into digital khata.",
-                "खुद्रा बिक्रेताले B2C उपभोक्ता काउन्टर बिक्री र QR बिलिङ गर्छन् → मौज्दात हेरी Marketplace बाट B2B थोक अर्डर गर्छन् → MoveX ले OTP प्रमाणीकरणसहित सामान पुर्याउँछ → हिसाब डिजिटल खातामा स्वतः मिलान हुन्छ।"
+                "A retailer rings up B2C consumer counter sales with instant QR billing → tracks inventory & restocks from B2B suppliers on Marketplace → Rider App delivers the parcel with OTP verification → dues reconcile seamlessly into digital khata.",
+                "खुद्रा बिक्रेताले B2C उपभोक्ता काउन्टर बिक्री र QR बिलिङ गर्छन् → मौज्दात हेरी Marketplace बाट B2B थोक अर्डर गर्छन् → Rider App ले OTP प्रमाणीकरणसहित सामान पुर्याउँछ → हिसाब डिजिटल खातामा स्वतः मिलान हुन्छ।"
               )}
             </p>
             <div className="mt-8 flex justify-center">

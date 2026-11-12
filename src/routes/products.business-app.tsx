@@ -209,7 +209,7 @@ function BusinessAppPage() {
                       tr(lang, "Instant paperless WhatsApp & SMS digital customer receipts", "कागजविहीन व्हाट्सएप र एसएमएस डिजिटल ग्राहक रसिद"),
                       tr(lang, "B2C Customer Khata (Udhaaro) with automated SMS reminders", "स्वचालित एसएमएस रिमाइन्डरसहित ग्राहक उधारो खाता"),
                       tr(lang, "B2C Digital Storefront link for neighborhood online orders", "टोलका ग्राहकका लागि अनलाइन अर्डर डिजिटल स्टोर लिङ्क"),
-                      tr(lang, "One-tap MoveX dispatch for consumer doorstep deliveries", "ग्राहकको घरमै डेलिभरी गर्न MoveX राइडर प्रेषण"),
+                      tr(lang, "One-tap Rider App dispatch for consumer doorstep deliveries", "ग्राहकको घरमै डेलिभरी गर्न Rider App प्रेषण"),
                     ].map((bullet, idx) => (
                       <li key={idx} className="flex items-start gap-2.5">
                         <CheckCircle2 className="h-4 w-4 text-emerald-600 shrink-0 mt-0.5" />
@@ -342,12 +342,12 @@ function BusinessAppPage() {
             {
               badge: "B2B Wholesale",
               title: tr(lang, "Wholesale Stockists & Distributors", "थोक बिक्रेता तथा वितरकहरू"),
-              desc: tr(lang, "Multi-shop order dispatch, volume discount tiers, distributor catalogues, and MoveX parcel logistics.", "हजारौं पसलका अर्डर व्यवस्थापन, थोक मूल्य क्याटलग, उधारो नियन्त्रण र MoveX ढुवानी।"),
+              desc: tr(lang, "Multi-shop order dispatch, volume discount tiers, distributor catalogues, and Rider App parcel logistics.", "हजारौं पसलका अर्डर व्यवस्थापन, थोक मूल्य क्याटलग, उधारो नियन्त्रण र Rider App ढुवानी।"),
             },
             {
               badge: "B2B & B2C",
               title: tr(lang, "Hardware & Commercial Suppliers", "हार्डवेयर तथा व्यावसायिक आपूर्तिकर्ता"),
-              desc: tr(lang, "Bulk order management, contractor credit ledgers, VAT invoicing, and direct MoveX parcel dispatch.", "थोक अर्डर, ठेकेदार उधारो खाता, भ्याट बिलिङ र MoveX पार्सल ढुवानी।"),
+              desc: tr(lang, "Bulk order management, contractor credit ledgers, VAT invoicing, and direct Rider App parcel dispatch.", "थोक अर्डर, ठेकेदार उधारो खाता, भ्याट बिलिङ र Rider App पार्सल ढुवानी।"),
             },
           ].map((item, i) => (
             <Reveal key={item.title} delay={i * 70} className="h-full">

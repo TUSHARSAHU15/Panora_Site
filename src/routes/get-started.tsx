@@ -13,7 +13,7 @@ export const Route = createFileRoute("/get-started")({
       {
         name: "description",
         content:
-          "Join PANORA Pvt. Ltd. as a retail merchant, wholesale distributor, or MoveX delivery rider across Nepal.",
+          "Join PANORA Pvt. Ltd. as a retail merchant, wholesale distributor, or Rider App delivery partner across Nepal.",
       },
       { property: "og:title", content: "Get Started — PANORA Pvt. Ltd." },
       { property: "og:description", content: "Choose your role in Nepal's digital commerce and logistics ecosystem." },
@@ -49,10 +49,10 @@ function GetStarted() {
       icon: Bike,
       blurb: tr(
         lang,
-        "Apply to join the MoveX parcel logistics network with your motorcycle, scooter, or delivery van. Earn steady pay with weekly bank transfers.",
-        "आफ्नो बाइक, स्कुटर वा भ्यानसहित MoveX पार्सल सञ्जालमा जोडिनुहोस्। नियमित काम र साप्ताहिक बैंक भुक्तानी पाउनुहोस्।"
+        "Apply to join the Rider App parcel logistics network with your motorcycle, scooter, or delivery van. Earn steady pay with weekly bank transfers.",
+        "आफ्नो बाइक, स्कुटर वा भ्यानसहित Rider App पार्सल सञ्जालमा जोडिनुहोस्। नियमित काम र साप्ताहिक बैंक भुक्तानी पाउनुहोस्।"
       ),
-      cta: tr(lang, "Register as MoveX Rider", "MoveX राइडर दर्ता गर्नुहोस्"),
+      cta: tr(lang, "Register for Rider App", "Rider App दर्ता गर्नुहोस्"),
       to: "/rider-registration",
       popular: false,
     },
@@ -64,7 +64,7 @@ function GetStarted() {
       blurb: tr(
         lang,
         "List your official wholesale catalogue on PANORA Marketplace, streamline warehouse packing, and coordinate local parcel dispatch.",
-        "PANORA बजारमा आफ्नो थोक क्याटलग सूचीकृत गर्नुहोस्, गोदाम अर्डर व्यवस्थापन गर्नुहोस् र MoveX बाट ढुवानी गर्नुहोस्।"
+        "PANORA बजारमा आफ्नो थोक क्याटलग सूचीकृत गर्नुहोस्, गोदाम अर्डर व्यवस्थापन गर्नुहोस् र Rider App बाट ढुवानी गर्नुहोस्।"
       ),
       cta: tr(lang, "Distributor Pre-Booking", "वितरक प्रि-बुकिङ गर्नुहोस्"),
       to: "/merchant-registration",

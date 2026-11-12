@@ -1,6 +1,6 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { ChevronDown, Menu, X, Sparkles, Building2, Smartphone, Package, ShoppingBag, Users, HelpCircle } from "lucide-react";
+import { ChevronDown, Menu, X, Sparkles, Building2, Smartphone, Package, ShoppingBag, Users, HelpCircle, Briefcase, Megaphone, Handshake } from "lucide-react";
 import { Logo } from "./Logo";
 import { StatusBadge } from "./StatusBadge";
 import { PlayStoreButton } from "./PlayStoreButton";
@@ -198,14 +198,58 @@ export function Header() {
             {tr(lang, "Pricing", "मूल्य")}
           </Link>
 
-          {/* Highlighted Partners */}
-          <Link
-            to="/partners-careers"
-            className="inline-flex items-center whitespace-nowrap rounded-full px-3 py-1.5 text-[13px] 2xl:text-sm font-bold transition-all text-brand-cyan border border-brand-cyan/35 bg-brand-cyan/10 hover:bg-brand-cyan/20 hover:text-white shadow-xs"
-            activeProps={{ className: "text-white font-bold bg-brand-cyan/30 border-brand-cyan" }}
+          {/* Highlighted Partners & Careers Dropdown */}
+          <div
+            className="relative"
+            onMouseEnter={() => setActiveDropdown("partners")}
+            onMouseLeave={() => setActiveDropdown(null)}
           >
-            {tr(lang, "Partners", "साझेदारहरू")}
-          </Link>
+            <Link
+              to="/partners-careers"
+              className="inline-flex items-center gap-1 whitespace-nowrap rounded-full px-3 py-1.5 text-[13px] 2xl:text-sm font-bold transition-all text-brand-cyan border border-brand-cyan/35 bg-brand-cyan/10 hover:bg-brand-cyan/20 hover:text-white shadow-xs"
+              activeProps={{ className: "text-white font-bold bg-brand-cyan/30 border-brand-cyan" }}
+            >
+              <span>{tr(lang, "Partners & Careers", "साझेदार र करियर")}</span>
+              <ChevronDown className="h-3.5 w-3.5 opacity-70 shrink-0" />
+            </Link>
+            {activeDropdown === "partners" && (
+              <div className="absolute left-0 top-full w-80 pt-2">
+                <div className="rounded-2xl border border-white/15 bg-[#07152F]/98 p-2.5 shadow-2xl backdrop-blur-2xl space-y-1">
+                  <Link
+                    to="/partners-careers"
+                    className="flex items-start gap-3 rounded-xl p-3 transition-colors hover:bg-white/10"
+                  >
+                    <Handshake className="mt-0.5 h-4 w-4 text-brand-cyan shrink-0" />
+                    <div>
+                      <p className="text-sm font-bold text-white">{tr(lang, "Strategic Partners", "रणनीतिक साझेदारहरू")}</p>
+                      <p className="mt-0.5 text-xs text-white/65">{tr(lang, "Logistics, fintech, distributor & tech alliances", "ढुवानी, फिनटेक, वितरक र प्रविधि सहकार्य")}</p>
+                    </div>
+                  </Link>
+                  <Link
+                    to="/careers"
+                    className="flex items-start gap-3 rounded-xl p-3 transition-colors hover:bg-white/10"
+                  >
+                    <Briefcase className="mt-0.5 h-4 w-4 text-brand-cyan shrink-0" />
+                    <div>
+                      <p className="text-sm font-bold text-white">{tr(lang, "Careers at PANORA", "PANORA मा करियर")}</p>
+                      <p className="mt-0.5 text-xs text-white/65">{tr(lang, "Open roles in engineering, ops & growth", "इन्जिनियरिङ, सञ्चालन र ग्रोथ अवसरहरू")}</p>
+                    </div>
+                  </Link>
+                  <Link
+                    to="/careers"
+                    hash="marketing-partner"
+                    className="flex items-start gap-3 rounded-xl p-3 transition-colors hover:bg-white/10"
+                  >
+                    <Megaphone className="mt-0.5 h-4 w-4 text-emerald-400 shrink-0" />
+                    <div>
+                      <p className="text-sm font-bold text-white">{tr(lang, "Become a Marketing Partner & Earn", "मार्केटिङ साझेदार बन्नुहोस् र कमाउनुहोस्")}</p>
+                      <p className="mt-0.5 text-xs text-white/65">{tr(lang, "Refer merchants & riders to earn rewards", "व्यापारी र राइडर जोडेर कमिसन कमाउनुहोस्")}</p>
+                    </div>
+                  </Link>
+                </div>
+              </div>
+            )}
+          </div>
 
           {/* FAQ */}
           <Link
@@ -262,9 +306,6 @@ export function Header() {
           >
             {tr(lang, "Pre-book Business App", "एप प्रि-बुक गर्नुहोस्")}
           </Link>
-
-          {/* Google Play CTA */}
-          <PlayStoreButton size="xs" />
         </div>
 
         {/* Mobile menu trigger */}
@@ -351,6 +392,12 @@ export function Header() {
               </Link>
               <Link to="/partners-careers" className="block text-sm font-bold text-brand-cyan hover:underline">
                 ★ {tr(lang, "Partners & Alliances", "साझेदार तथा सहकार्य")}
+              </Link>
+              <Link to="/careers" className="block text-sm font-bold text-white hover:text-brand-cyan">
+                {tr(lang, "Careers at PANORA", "PANORA मा करियर")}
+              </Link>
+              <Link to="/careers" hash="marketing-partner" className="block text-sm font-semibold text-emerald-300 hover:underline pl-3">
+                → {tr(lang, "Become a Marketing Partner & Earn", "मार्केटिङ साझेदार बन्नुहोस् र कमाउनुहोस्")}
               </Link>
               <Link to="/faq" className="block text-sm font-semibold text-white/80 hover:text-brand-cyan">
                 {tr(lang, "FAQ & Support", "प्रश्नोत्तर र सहायता")}

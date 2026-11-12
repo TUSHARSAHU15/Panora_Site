@@ -5,7 +5,7 @@ export const Route = createFileRoute("/terms")({
   head: () => ({
     meta: [
       { title: "Terms of Service — PANORA Pvt. Ltd." },
-      { name: "description", content: "Terms of Service governing the use of PANORA Pvt. Ltd. platforms, Business App, MoveX, and Marketplace." },
+      { name: "description", content: "Terms of Service governing the use of PANORA Pvt. Ltd. platforms, Business App, Rider App, and Marketplace." },
       { property: "og:title", content: "Terms of Service — PANORA Pvt. Ltd." },
       { property: "og:description", content: "Service standards, merchant terms, and logistics rules for the PANORA ecosystem." },
       { property: "og:url", content: "/terms" },
@@ -21,7 +21,7 @@ const sections: LegalSection[] = [
     title: "1. Acceptance & Corporate Authority",
     body: [
       "These Terms of Service ('Terms') constitute a legally binding agreement between your commercial business and PANORA Pvt. Ltd., a private limited company incorporated under the laws of Nepal.",
-      "By visiting our website, submitting a merchant pre-booking, registering as a MoveX delivery partner, or accessing any PANORA software application, you confirm that you possess full legal authority to bind the represented business.",
+      "By visiting our website, submitting a merchant pre-booking, registering as a Rider App delivery partner, or accessing any PANORA software application, you confirm that you possess full legal authority to bind the represented business.",
     ],
   },
   {
@@ -42,11 +42,11 @@ const sections: LegalSection[] = [
   },
   {
     id: "movex-logistics",
-    title: "4. MoveX Logistics & Parcel Coordination",
+    title: "4. Rider App Logistics & Parcel Coordination",
     body: [
-      "MoveX coordinates parcel pickup and delivery requests between eligible businesses, customers, and delivery partners.",
+      "Rider App coordinates parcel pickup and delivery requests between eligible businesses, customers, and delivery partners.",
       "Senders must ensure packages do not contain illegal, hazardous, stolen, or restricted goods under Nepalese law. Consignments are subject to inspection and secure OTP verification.",
-      "Cash-on-Delivery (COD) funds collected by authorized MoveX riders are held in dedicated trust accounts and remitted to merchants according to agreed settlement cycles.",
+      "Cash-on-Delivery (COD) funds collected by authorized Rider App riders are held in dedicated trust accounts and remitted to merchants according to agreed settlement cycles.",
     ],
   },
   {

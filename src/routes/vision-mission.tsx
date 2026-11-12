@@ -180,7 +180,7 @@ function VisionMission() {
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="h-3.5 w-3.5 text-brand-cyan shrink-0" />
-                    <span>MoveX Kathmandu Valley pilot dispatch & rider onboarding</span>
+                    <span>Rider App Kathmandu Valley pilot dispatch & rider onboarding</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="h-3.5 w-3.5 text-brand-cyan shrink-0" />
@@ -207,7 +207,7 @@ function VisionMission() {
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="h-3.5 w-3.5 text-brand-cyan shrink-0" />
-                    <span>MoveX intercity corridor expansion (Pokhara, Biratnagar, Narayangarh)</span>
+                    <span>Rider App intercity corridor expansion (Pokhara, Biratnagar, Narayangarh)</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="h-3.5 w-3.5 text-brand-cyan shrink-0" />

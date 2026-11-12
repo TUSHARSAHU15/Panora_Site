@@ -49,8 +49,8 @@ function Solutions() {
       subtitle: tr(lang, "Powered by Marketplace & Business App", "Marketplace र Business App द्वारा सञ्चालित"),
       body: tr(
         lang,
-        "List your brand catalogue in front of verified retail shops, organize warehouse order picking, enforce merchant credit limits, and coordinate MoveX parcel dispatches.",
-        "हजारौं पसलहरूको अगाडि आफ्नो क्याटलग देखाउनुहोस्, गोदाम अर्डर लाम मिलाउनुहोस्, उधारो सीमा नियन्त्रण गर्नुहोस्, र MoveX बाट पार्सल पठाउनुहोस्।"
+        "List your brand catalogue in front of verified retail shops, organize warehouse order picking, enforce merchant credit limits, and coordinate Rider App parcel dispatches.",
+        "हजारौं पसलहरूको अगाडि आफ्नो क्याटलग देखाउनुहोस्, गोदाम अर्डर लाम मिलाउनुहोस्, उधारो सीमा नियन्त्रण गर्नुहोस्, र Rider App बाट पार्सल पठाउनुहोस्।"
       ),
       cta: tr(lang, "Explore Distributor Solutions", "वितरक समाधान हेर्नुहोस्"),
       to: "/solutions/distributors",

@@ -11,7 +11,7 @@ export const site = {
     contact: {
       email: "info@panora.com.np",
       supportEmail: "info@panora.com.np",
-      careersEmail: "careers@panora.com.np",
+      careersEmail: "info@panora.com.np",
       phone: "+977 9852822139",
       location: "Koteshwor-32, Jadibuti, Kathmandu & Tilathi Koiladi-1, Saptari, Nepal",
       hours: "Sunday – Friday, 9:00 AM – 6:00 PM (NPT)",
@@ -46,7 +46,7 @@ export const site = {
     contact: {
       email: "info@panora.com.np",
       supportEmail: "info@panora.com.np",
-      careersEmail: "careers@panora.com.np",
+      careersEmail: "info@panora.com.np",
       phone: "+977 9852822139",
       location: "कोटेश्वर-३२, जडिबुटी, काठमाडौँ र तिलाठी कोइलाडी-१, सप्तरी, नेपाल",
       hours: "आइतबार – शुक्रबार, बिहान ९:०० – साँझ ६:०० (NPT)",
@@ -211,7 +211,7 @@ export const productsDetail = {
         },
         {
           problem: "No Digital Channel for Local Consumer Delivery",
-          solution: "Instant B2C Digital Storefront link allowing neighborhood consumers to order online with MoveX doorstep delivery integration.",
+          solution: "Instant B2C Digital Storefront link allowing neighborhood consumers to order online with Rider App doorstep delivery integration.",
         },
       ],
       features: [
@@ -219,7 +219,7 @@ export const productsDetail = {
         { name: "B2B Wholesale Restock & Supplier Connect", status: "In Development" as FeatureStatus, description: "Browse verified brand catalogues, compare wholesale volume pricing, and place bulk restock orders directly in-app." },
         { name: "Dual Digital Khata (B2C & B2B Ledgers)", status: "In Development" as FeatureStatus, description: "Maintain separate, transparent credit ledgers for walk-in retail customers (B2C) and wholesale distributors (B2B)." },
         { name: "B2C Digital Storefront & Social Commerce", status: "In Development" as FeatureStatus, description: "Share your live product catalogue via WhatsApp or social links so neighborhood consumers can place direct orders." },
-        { name: "Integrated MoveX B2C & B2B Parcel Dispatch", status: "In Development" as FeatureStatus, description: "Dispatch customer orders for local home delivery or ship B2B wholesale cartons in one tap via MoveX riders." },
+        { name: "Integrated Rider App B2C & B2B Parcel Dispatch", status: "In Development" as FeatureStatus, description: "Dispatch customer orders for local home delivery or ship B2B wholesale cartons in one tap via Rider App." },
         { name: "Unified Real-Time Inventory & Low-Stock Alerts", status: "In Development" as FeatureStatus, description: "Live stock deduction on every B2C retail sale with automated threshold alerts triggering B2B wholesale reorders." },
         { name: "Multi-Staff Roles & Cashier Shift Tracking", status: "Planned" as FeatureStatus, description: "Granular permissions for front-counter retail cashiers and back-office B2B inventory managers." },
         { name: "Tally, Swastik & Tax Invoicing Sync", status: "Planned" as FeatureStatus, description: "Export B2B purchases and B2C retail invoices directly into standard Nepalese accounting and VAT formats." },
@@ -294,7 +294,7 @@ export const productsDetail = {
         { name: "Verified Distributor Catalogues", status: "In Development" as FeatureStatus, description: "Browse verified brand catalogues with clear specifications and wholesale pricing tiers." },
         { name: "Direct RFQ & Bulk Price Negotiation", status: "In Development" as FeatureStatus, description: "Request formal price quotes for large commercial purchases and custom payment terms." },
         { name: "Supplier Rating & Authenticity Badges", status: "In Development" as FeatureStatus, description: "Community-driven merchant reviews, order completion rates, and official brand badges." },
-        { name: "Integrated MoveX Shipping at Checkout", status: "In Development" as FeatureStatus, description: "Seamless delivery calculation and parcel dispatch through the MoveX network." },
+        { name: "Integrated Rider App Shipping at Checkout", status: "In Development" as FeatureStatus, description: "Seamless delivery calculation and parcel dispatch through the Rider App network." },
         { name: "B2C Consumer Marketplace Portal", status: "Planned" as FeatureStatus, description: "Expanding merchant storefronts to retail consumers for direct digital shopping across Nepal." },
         { name: "Cross-Border Import/Export Channels", status: "Planned" as FeatureStatus, description: "Future-facing trade bridge connecting Nepalese producers with regional South Asian markets." },
       ],
@@ -330,7 +330,7 @@ export const productsDetail = {
         },
         {
           problem: "स्थानीय ग्राहकका लागि अनलाइन डेलिभरी सुविधा नहुनु",
-          solution: "तत्काल B2C डिजिटल स्टोर लिङ्क जसबाट टोलका ग्राहकले अनलाइन अर्डर गर्न सक्छन् र MoveX मार्फत घरमै सामान डेलिभरी हुन्छ।",
+          solution: "तत्काल B2C डिजिटल स्टोर लिङ्क जसबाट टोलका ग्राहकले अनलाइन अर्डर गर्न सक्छन् र Rider App मार्फत घरमै सामान डेलिभरी हुन्छ।",
         },
       ],
       features: [
@@ -338,7 +338,7 @@ export const productsDetail = {
         { name: "B2B थोक वितरक जडान तथा रिस्टकिङ", status: "In Development" as FeatureStatus, description: "प्रमाणित वितरकका क्याटलग हेरी थोक मूल्यमा सिधै एप भित्रैबाट सामान अर्डर गर्नुहोस्।" },
         { name: "दोहोरो डिजिटल खाता (B2C र B2B)", status: "In Development" as FeatureStatus, description: "खुद्रा ग्राहकको उधारो (B2C) र वितरकको खाता (B2B) लाई छुट्टाछुट्टै पारदर्शी राख्नुहोस्।" },
         { name: "B2C डिजिटल पसल र अनलाइन अर्डर", status: "In Development" as FeatureStatus, description: "ह्वाट्सएप वा फेसबुकमा आफ्नो पसलको क्याटलग सेयर गरी ग्राहकबाट सिधै अनलाइन अर्डर लिनुहोस्।" },
-        { name: "MoveX मार्फत B2C होम डेलिभरी", status: "In Development" as FeatureStatus, description: "पसलको काउन्टरबाटै एक क्लिकमा MoveX राइडर बोलाएर ग्राहकको घरमा सामान पठाउनुहोस्।" },
+        { name: "Rider App मार्फत B2C होम डेलिभरी", status: "In Development" as FeatureStatus, description: "पसलको काउन्टरबाटै एक क्लिकमा Rider App बोलाएर ग्राहकको घरमा सामान पठाउनुहोस्।" },
         { name: "एकीकृत स्टक ट्र्याकर र न्यून स्टक सूचना", status: "In Development" as FeatureStatus, description: "B2C बिक्रीसँगै स्टक घट्ने र सामान सकिन लाग्दा B2B रिस्टक सूचना प्राप्त हुने।" },
         { name: "कर्मचारी भूमिका र क्यासियर सिफ्ट व्यवस्थापन", status: "Planned" as FeatureStatus, description: "काउन्टर क्यासियर र गोदाम व्यवस्थापकका लागि छुट्टाछुट्टै भूमिका र अनुमति नियन्त्रण।" },
         { name: "ट्याली (Tally) र भ्याट बिलिङ सिंक", status: "Planned" as FeatureStatus, description: "B2B खरिद र B2C बिक्रीलाई नेपाली प्रचलित लेखा सफ्टवेयरसँग सिधै सिंक गर्नुहोस्।" },
@@ -413,7 +413,7 @@ export const productsDetail = {
         { name: "प्रमाणित वितरक क्याटलग", status: "In Development" as FeatureStatus, description: "स्पष्ट विवरण र थोक मूल्य दरसहित ब्राण्ड क्याटलग ब्राउज गर्नुहोस्।" },
         { name: "प्रत्यक्ष कोटेशन र ठूलो अर्डर वार्ता", status: "In Development" as FeatureStatus, description: "ठूला व्यावसायिक खरिदका लागि विशेष मूल्य अनुरोध गर्नुहोस्।" },
         { name: "आपूर्तिकर्ता रेटिङ र विश्वास ब्याज", status: "In Development" as FeatureStatus, description: "व्यापारीहरूको समीक्षा र अर्डर पूरा गरेको इतिहास।" },
-        { name: "चेकआउटमा MoveX ढुवानी जडान", status: "In Development" as FeatureStatus, description: "MoveX नेटवर्क मार्फत तत्काल ढुवानी भाडा र डेलिभरी व्यवस्था।" },
+        { name: "चेकआउटमा Rider App ढुवानी जडान", status: "In Development" as FeatureStatus, description: "Rider App नेटवर्क मार्फत तत्काल ढुवानी भाडा र डेलिभरी व्यवस्था।" },
         { name: "B2C उपभोक्ता बजार पोर्टल", status: "Planned" as FeatureStatus, description: "नेपालभरिका खुद्रा उपभोक्ताहरूका लागि प्रत्यक्ष अनलाइन किनमेल।" },
         { name: "सीमापार आयात/निर्यात व्यापार सेतु", status: "Planned" as FeatureStatus, description: "नेपाली उत्पादनलाई दक्षिण एसियाली बजारसँग जोड्ने भावी व्यापार सेतु।" },
       ],
@@ -424,13 +424,13 @@ export const productsDetail = {
 export const stats = {
   en: [
     { value: 100, suffix: "%", label: "Focused on Nepal's Trade Realities" },
-    { value: 3, suffix: " Pillars", label: "Business App, MoveX & Marketplace" },
+    { value: 3, suffix: " Pillars", label: "Business App, Rider App & Marketplace" },
     { value: 7, suffix: " Provinces", label: "Planned Nationwide Coverage" },
     { value: 24, suffix: "/7", label: "Ecosystem Commitment" },
   ] as const,
   ne: [
     { value: 100, suffix: "%", label: "नेपालको व्यापारिक वास्तविकतामा केन्द्रित" },
-    { value: 3, suffix: " आधारस्तम्भ", label: "बिजनेस एप, MoveX र बजार" },
+    { value: 3, suffix: " आधारस्तम्भ", label: "बिजनेस एप, Rider App र बजार" },
     { value: 7, suffix: " प्रदेश", label: "देशव्यापी योजनाबद्ध पहुँच" },
     { value: 24, suffix: "/7", label: "पारिस्थितिकीप्रति प्रतिबद्धता" },
   ] as const,
@@ -526,7 +526,7 @@ export const pricingPlans = {
       features: [
         { text: "Priority access to PANORA Business App beta", included: true },
         { text: "Free digital udhaaro khata & inventory setup", included: true },
-        { text: "Zero onboarding fee for MoveX parcel network", included: true },
+        { text: "Zero onboarding fee for Rider App parcel network", included: true },
         { text: "Direct support from PANORA founding product team", included: true },
         { text: "Lifetime grandfathered perks on future upgrades", included: true },
         { text: "Custom API & ERP connectors", included: false },
@@ -546,7 +546,7 @@ export const pricingPlans = {
         { text: "Everything in Early Adopter tier", included: true },
         { text: "Multi-counter billing & staff access control", included: true },
         { text: "Automated SMS credit reminder alerts to buyers", included: true },
-        { text: "MoveX bulk parcel shipping discounts", included: true },
+        { text: "Rider App bulk parcel shipping discounts", included: true },
         { text: "Advanced analytics & profit/loss summaries", included: true },
         { text: "Dedicated account manager", included: false },
       ],
@@ -564,7 +564,7 @@ export const pricingPlans = {
       features: [
         { text: "Full ecosystem white-glove onboarding", included: true },
         { text: "Multi-warehouse dispatch & route automation", included: true },
-        { text: "Dedicated MoveX rider fleet integration", included: true },
+        { text: "Dedicated Rider App fleet integration", included: true },
         { text: "Custom ERP, SAP & Tally integration", included: true },
         { text: "24/7 dedicated enterprise support SLA", included: true },
         { text: "Custom contract terms & volume discounts", included: true },
@@ -585,7 +585,7 @@ export const pricingPlans = {
       features: [
         { text: "PANORA Business App बेटामा प्राथमिकता पहुँच", included: true },
         { text: "निःशुल्क डिजिटल उधारो खाता र मौज्दात सेटअप", included: true },
-        { text: "MoveX पार्सल नेटवर्कमा शून्य दर्ता शुल्क", included: true },
+        { text: "Rider App पार्सल नेटवर्कमा शून्य दर्ता शुल्क", included: true },
         { text: "PANORA प्रविधि टोलीबाट प्रत्यक्ष सहयोग", included: true },
         { text: "भविष्यका स्तरवृद्धिहरूमा विशेष सहुलियत", included: true },
         { text: "कस्टम API र ERP जडान", included: false },
@@ -605,7 +605,7 @@ export const pricingPlans = {
         { text: "अग्रगामी बेटाका सम्पूर्ण सुविधाहरू", included: true },
         { text: "बहु-काउन्टर बिलिङ र कर्मचारी पहुँच नियन्त्रण", included: true },
         { text: "ग्राहकलाई स्वचालित एसएमएस उधारो ताकेता", included: true },
-        { text: "MoveX थोक पार्सल ढुवानीमा विशेष छुट", included: true },
+        { text: "Rider App थोक पार्सल ढुवानीमा विशेष छुट", included: true },
         { text: "विस्तृत नाफा/नोक्सान तथा बिक्री विश्लेषण", included: true },
         { text: "समर्पित खाता प्रबन्धक", included: false },
       ],
@@ -623,7 +623,7 @@ export const pricingPlans = {
       features: [
         { text: "सम्पूर्ण पारिस्थितिकीको विशेष सेटअप", included: true },
         { text: "बहु-गोदाम प्रेषण र स्वचालित रूटिङ", included: true },
-        { text: "समर्पित MoveX राइडर फ्लीट समन्वय", included: true },
+        { text: "समर्पित Rider App फ्लीट समन्वय", included: true },
         { text: "कस्टम ERP, SAP र Tally सिंक", included: true },
         { text: "२४/७ समर्पित संस्थागत प्राविधिक सहयोग", included: true },
         { text: "अनुकूलित सम्झौता र ठूलो परिमाणमा छुट", included: true },
@@ -659,7 +659,7 @@ export const careerOpenings = [
   },
   {
     title: "Logistics & Fleet Network Coordinator",
-    department: "MoveX Logistics",
+    department: "Rider App Logistics",
     location: "Kathmandu, Nepal",
     type: "Full-Time",
     description: "Manage rider partner relationships, route verification, and COD reconciliation processes.",
@@ -715,7 +715,7 @@ export const faqCategories = {
         },
         {
           q: "How does Cash-on-Delivery (COD) reconciliation work?",
-          a: "MoveX records every cash collection digitally with OTP verification upon handover. Accumulated COD balances are automatically reconciled and remitted directly to the merchant's verified bank account on an agreed schedule.",
+          a: "Rider App records every cash collection digitally with OTP verification upon handover. Accumulated COD balances are automatically reconciled and remitted directly to the merchant's verified bank account on an agreed schedule.",
         },
       ],
     },
@@ -724,7 +724,7 @@ export const faqCategories = {
       items: [
         {
           q: "How does PANORA Marketplace differ from regular e-commerce sites?",
-          a: "Unlike typical consumer marketplaces, PANORA Marketplace focuses on authentic source supply, wholesale pricing tiers, verified PAN/VAT registered distributors, and direct integration with local logistics (MoveX) and business workflows.",
+          a: "Unlike typical consumer marketplaces, PANORA Marketplace focuses on authentic source supply, wholesale pricing tiers, verified PAN/VAT registered distributors, and direct integration with local logistics (Rider App) and business workflows.",
         },
         {
           q: "When will full consumer trade be available?",

@@ -9,7 +9,7 @@ export const Route = createFileRoute("/solutions/merchants")({
       {
         name: "description",
         content:
-          "Order from verified distributors, manage digital udhaaro ledgers, track inventory, and receive MoveX doorstep deliveries with PANORA.",
+          "Order from verified distributors, manage digital udhaaro ledgers, track inventory, and receive Rider App doorstep deliveries with PANORA.",
       },
       { property: "og:title", content: "PANORA for Merchants — Connect. Manage. Trade." },
       { property: "og:description", content: "Shop billing, digital khata, inventory, and B2B ordering for Nepalese merchants." },
@@ -53,7 +53,7 @@ export const Route = createFileRoute("/solutions/merchants")({
           { title: "One-Tap B2B Restock Ordering", body: "Browse verified brand catalogues on the Marketplace and reorder wholesale stock in seconds." },
           { title: "Dual Digital Khata (B2C & B2B)", body: "Separate ledgers for neighborhood consumer credit and distributor balances with SMS confirmations." },
           { title: "B2C Digital Storefront", body: "Share your live product catalogue on WhatsApp/social links for direct consumer home delivery." },
-          { title: "MoveX Doorstep Delivery", body: "Dispatch retail orders to local consumers and track incoming wholesale restock cartons live." },
+          { title: "Rider App Doorstep Delivery", body: "Dispatch retail orders to local consumers and track incoming wholesale restock cartons live." },
           { title: "100% Free Beta Period", body: "Pre-book today to receive free setup assistance, zero pilot fees, and permanent early adopter benefits." },
         ],
         ne: [
@@ -61,7 +61,7 @@ export const Route = createFileRoute("/solutions/merchants")({
           { title: "एक ट्यापमा B2B रिस्टक अर्डर", body: "बजारमा प्रमाणित क्याटलग हेरी केही सेकेन्डमै थोक सामान अर्डर पठाउनुहोस्।" },
           { title: "दोहोरो डिजिटल खाता (B2C र B2B)", body: "ग्राहकको उधारो र वितरकको हिसाबलाई एसएमएस पुष्टिसहित छुट्टाछुट्टै स्पष्ट राख्नुहोस्।" },
           { title: "B2C अनलाइन डिजिटल पसल", body: "ह्वाट्सएपमा पसलको क्याटलग सेयर गरी टोलका ग्राहकबाट सिधै अनलाइन अर्डर लिनुहोस्।" },
-          { title: "MoveX घरदैलो डेलिभरी", body: "ग्राहकको घरमै सामान पठाउनुहोस् र गोदामबाट आउने थोक सामान प्रत्यक्ष ट्र्याक गर्नुहोस्।" },
+          { title: "Rider App घरदैलो डेलिभरी", body: "ग्राहकको घरमै सामान पठाउनुहोस् र गोदामबाट आउने थोक सामान प्रत्यक्ष ट्र्याक गर्नुहोस्।" },
           { title: "निःशुल्क बेटा अवधि", body: "आजै प्रि-बुक गरेर आजीवन विशेष सहुलियत र निःशुल्क अनबोर्डिङ सहयोग पाउनुहोस्।" },
         ],
       }}

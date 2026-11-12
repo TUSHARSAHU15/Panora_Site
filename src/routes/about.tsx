@@ -92,7 +92,7 @@ function About() {
               {tr(
                 lang,
                 "Trade in Nepal relies heavily on personal trust, paper ledgers (khata), unrecorded phone calls, and manual parcel handoffs. While relationships are strong, fragmented record-keeping and unpredictable logistics throttle growth. PANORA bridges this divide through three cohesive products: the PANORA Business App, PANORA Rider App, and PANORA Marketplace.",
-                "नेपाली व्यापार व्यक्तिगत विश्वास, कापीको खाता, फोन कल र म्यानुअल पार्सल ढुवानीमा चल्छ। सम्बन्ध बलियो भए पनि हिसाबकिताबको अव्यवस्था र ढुवानीको अनिश्चितताले व्यापार विस्तार रोकेको छ। PANORA ले आफ्ना तीन उत्पादनहरू Business App, MoveX, र Marketplace मार्फत यो खाडल पुर्दछ।"
+                "नेपाली व्यापार व्यक्तिगत विश्वास, कापीको खाता, फोन कल र म्यानुअल पार्सल ढुवानीमा चल्छ। सम्बन्ध बलियो भए पनि हिसाबकिताबको अव्यवस्था र ढुवानीको अनिश्चितताले व्यापार विस्तार रोकेको छ। PANORA ले आफ्ना तीन उत्पादनहरू Business App, Rider App, र Marketplace मार्फत यो खाडल पुर्दछ।"
               )}
             </p>
 
