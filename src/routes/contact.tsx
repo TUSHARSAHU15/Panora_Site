@@ -30,6 +30,7 @@ export const Route = createFileRoute("/contact")({
 function Contact() {
   const { lang } = useLanguage();
   const c = site[lang].contact;
+  const corp = c.corporateInfo;
   const details = [
     {
       icon: Mail,
@@ -48,11 +49,6 @@ function Contact() {
       label: tr(lang, "Phone / WhatsApp", "फोन / ह्वाट्सएप"),
       value: c.phone,
       href: `tel:${c.phone.replace(/[^+\d]/g, "")}`,
-    },
-    {
-      icon: MapPin,
-      label: tr(lang, "Headquarters Location", "केन्द्रीय कार्यालय"),
-      value: c.location,
     },
     {
       icon: Clock,
@@ -78,7 +74,7 @@ function Contact() {
         <Reveal>
           <div className="inline-flex items-center gap-2 rounded-full bg-brand/10 px-3.5 py-1 text-xs font-bold text-brand uppercase tracking-wider mb-4">
             <Building2 className="h-3.5 w-3.5" />
-            <span>{tr(lang, "Headquarters — Saptari", "केन्द्रीय कार्यालय — सप्तरी")}</span>
+            <span>{tr(lang, "Kathmandu & Saptari, Nepal", "काठमाडौँ र सप्तरी, नेपाल")}</span>
           </div>
 
           <h2 className="text-2xl font-extrabold sm:text-3xl text-navy">
@@ -117,18 +113,57 @@ function Contact() {
             ))}
           </ul>
 
-          <div className="mt-8 rounded-2xl bg-surface p-5 border border-border">
-            <p className="text-xs font-bold text-navy flex items-center gap-1.5 mb-1">
-              <ShieldCheck className="h-4 w-4 text-emerald-600" />
-              <span>{tr(lang, "PANORA Pvt. Ltd. Corporate Entity", "PANORA Pvt. Ltd. संस्थागत निकाय")}</span>
+          <div className="mt-8 rounded-2xl bg-surface p-5 sm:p-6 border border-border space-y-5">
+            <p className="text-xs font-bold uppercase tracking-wider text-navy flex items-center gap-1.5">
+              <ShieldCheck className="h-4 w-4 text-emerald-600 shrink-0" />
+              <span>{tr(lang, "Corporate Information", "संस्थागत विवरण")}</span>
             </p>
-            <p className="text-xs text-muted-foreground leading-relaxed">
-              {tr(
-                lang,
-                "Registered with the Office of the Company Registrar, Government of Nepal. Operating in Madhesh Province and expanding nationwide.",
-                "कम्पनी रजिस्ट्रारको कार्यालय, नेपाल सरकारमा दर्ता भएको। मधेश प्रदेशबाट सञ्चालित र देशव्यापी विस्तारको क्रममा।"
-              )}
-            </p>
+
+            <div className="grid gap-4 sm:grid-cols-2">
+              <div className="space-y-1">
+                <p className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground flex items-center gap-1.5">
+                  <MapPin className="h-3.5 w-3.5 text-brand shrink-0" />
+                  <span>{corp.corporateOffice.title}</span>
+                </p>
+                {corp.corporateOffice.lines.map((line) => (
+                  <p key={line} className="text-xs font-semibold text-navy leading-relaxed">
+                    {line}
+                  </p>
+                ))}
+              </div>
+
+              <div className="space-y-1">
+                <p className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground flex items-center gap-1.5">
+                  <Building2 className="h-3.5 w-3.5 text-brand shrink-0" />
+                  <span>{corp.registeredOffice.title}</span>
+                </p>
+                {corp.registeredOffice.lines.map((line) => (
+                  <p key={line} className="text-xs font-semibold text-navy leading-relaxed">
+                    {line}
+                  </p>
+                ))}
+              </div>
+            </div>
+
+            <div className="border-t border-border pt-4 space-y-2">
+              <p className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground">
+                {corp.registration.title}
+              </p>
+              <dl className="space-y-1.5 text-xs">
+                <div className="flex flex-wrap gap-x-1.5">
+                  <dt className="text-muted-foreground">{corp.registration.registeredWithLabel}:</dt>
+                  <dd className="font-semibold text-navy">{corp.registration.registeredWith}</dd>
+                </div>
+                <div className="flex flex-wrap gap-x-1.5">
+                  <dt className="text-muted-foreground">{corp.registration.registrationNoLabel}:</dt>
+                  <dd className="font-semibold text-navy">{corp.registration.registrationNo}</dd>
+                </div>
+                <div className="flex flex-wrap gap-x-1.5">
+                  <dt className="text-muted-foreground">{corp.registration.vatNoLabel}:</dt>
+                  <dd className="font-semibold text-navy">{corp.registration.vatNo}</dd>
+                </div>
+              </dl>
+            </div>
           </div>
         </Reveal>
 

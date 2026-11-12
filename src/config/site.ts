@@ -13,8 +13,27 @@ export const site = {
       supportEmail: "info@panora.com.np",
       careersEmail: "careers@panora.com.np",
       phone: "+977 9852822139",
-      location: "Saptari, Madhesh Province, Nepal",
+      location: "Koteshwor-32, Jadibuti, Kathmandu & Tilathi Koiladi-1, Saptari, Nepal",
       hours: "Sunday – Friday, 9:00 AM – 6:00 PM (NPT)",
+      corporateInfo: {
+        corporateOffice: {
+          title: "Corporate Office",
+          lines: ["Koteshwor-32, Jadibuti, Kathmandu, Nepal", "Near Pani Padero"],
+        },
+        registeredOffice: {
+          title: "Registered Office",
+          lines: ["Tilathi Koiladi-1, Saptari", "Madhesh Province, Nepal"],
+        },
+        registration: {
+          title: "Company Registration Details",
+          registeredWithLabel: "Registered With",
+          registeredWith: "Office of the Company Registrar (OCR), Nepal",
+          registrationNoLabel: "Company Registration No.",
+          registrationNo: "392890/82/83",
+          vatNoLabel: "VAT Registration No.",
+          vatNo: "623622058",
+        },
+      },
     },
   },
   ne: {
@@ -29,8 +48,27 @@ export const site = {
       supportEmail: "info@panora.com.np",
       careersEmail: "careers@panora.com.np",
       phone: "+977 9852822139",
-      location: "सप्तरी, मधेश प्रदेश, नेपाल",
+      location: "कोटेश्वर-३२, जडिबुटी, काठमाडौँ र तिलाठी कोइलाडी-१, सप्तरी, नेपाल",
       hours: "आइतबार – शुक्रबार, बिहान ९:०० – साँझ ६:०० (NPT)",
+      corporateInfo: {
+        corporateOffice: {
+          title: "कर्पोरेट कार्यालय",
+          lines: ["कोटेश्वर-३२, जडिबुटी, काठमाडौँ, नेपाल", "पानी पँधेरो नजिक"],
+        },
+        registeredOffice: {
+          title: "दर्ता कार्यालय",
+          lines: ["तिलाठी कोइलाडी-१, सप्तरी", "मधेश प्रदेश, नेपाल"],
+        },
+        registration: {
+          title: "कम्पनी दर्ता विवरण",
+          registeredWithLabel: "दर्ता निकाय",
+          registeredWith: "कम्पनी रजिस्ट्रारको कार्यालय (OCR), नेपाल",
+          registrationNoLabel: "कम्पनी दर्ता नं.",
+          registrationNo: "392890/82/83",
+          vatNoLabel: "भ्याट (VAT) दर्ता नं.",
+          vatNo: "623622058",
+        },
+      },
     },
   },
 };
